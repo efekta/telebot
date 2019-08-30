@@ -18,7 +18,7 @@ ul, li {
   padding: 0;
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; transition: all .3s ease;}
 
 p { margin: 0; }
 
@@ -40,25 +40,23 @@ button { outline: none; }
 
 *, *:before, *:after { box-sizing: border-box; }
 
+.wrapper {
+  position: relative;
+  height: 100%;
+  background: #F9FAFC;
+}
+.container {
+  padding: 0 80px;
+}
 .title {
   font-size: 42px;
   line-height: 52px;
   letter-spacing: 0.05em;
   font-weight: 900;
 }
-// .wrapper {
-//   display: flex;
-//   flex-direction: column;
-//   height: 100%;
-// }
-
-// .content { flex: 1 0 auto; }
-
-// .container {
-//   margin: 0 auto;
-//   max-width: $content-size;
-//   width: 100%;
-// }
-
+input::-webkit-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
+input:-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
+input::-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
+input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; } 
 //Модули
 @import "modules/modules";
