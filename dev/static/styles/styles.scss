@@ -46,6 +46,8 @@ button { outline: none; }
   background: #F9FAFC;
 }
 .container {
+  max-width: 1920px;
+  margin: 0 auto;
   padding: 0 80px;
 }
 .title {

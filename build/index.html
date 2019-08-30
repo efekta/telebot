@@ -54,24 +54,39 @@
       <symbol id="down" width="13" height="7" viewBox="0 0 13 7" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.03004 6.81867C6.08482 6.87489 6.15586 6.92053 6.23754 6.95196C6.31923 6.98339 6.4093 6.99976 6.50064 6.99976C6.59197 6.99976 6.68204 6.98339 6.76373 6.95196C6.84541 6.92053 6.91646 6.87489 6.97123 6.81867L12.8824 0.726384C12.9288 0.678842 12.9625 0.624745 12.9816 0.567181C13.0008 0.509616 13.005 0.449712 12.9941 0.390889C12.9832 0.332066 12.9573 0.275475 12.9179 0.224348C12.8786 0.173221 12.8265 0.128559 12.7647 0.0929114C12.7029 0.0572642 12.6326 0.0313304 12.5577 0.01659C12.4829 0.00184955 12.405 -0.00140817 12.3286 0.00700233C12.2521 0.0154128 12.1786 0.0353266 12.1121 0.0656076C12.0456 0.0958886 11.9876 0.135944 11.9412 0.183485L6.50075 5.79344L1.0598 0.182584C1.0139 0.13458 0.956014 0.0941022 0.889532 0.063518C0.823049 0.0329338 0.749305 0.012858 0.672615 0.00446584C0.595924 -0.00392633 0.517828 -0.000466741 0.442897 0.0146427C0.367965 0.0297522 0.297705 0.0562078 0.236226 0.0924611C0.173741 0.127759 0.121043 0.172297 0.0812226 0.223464C0.0414018 0.274632 0.0152588 0.3314 0.00432607 0.390441C-0.00660669 0.449482 -0.00210929 0.509608 0.0175547 0.567294C0.0372186 0.62498 0.0716534 0.679067 0.118841 0.726384L6.03004 6.81867Z"></path>
       </symbol>
+      <symbol id="close" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0346 0.165642C13.2555 -0.0552139 13.6135 -0.0552139 13.8344 0.165642C14.0552 0.386497 14.0552 0.744563 13.8344 0.965392L7.79926 7.0005L13.8343 13.0356C14.0552 13.2564 14.0552 13.6145 13.8344 13.8354C13.724 13.9458 13.5792 14.001 13.4345 14.001C13.2898 14.001 13.145 13.9458 13.0346 13.8353L6.99951 7.80026L0.965446 13.8343C0.855005 13.9448 0.710274 14 0.565544 14C0.420814 14 0.276056 13.9448 0.165642 13.8343C-0.0552139 13.6135 -0.0552139 13.2554 0.165642 13.0346L6.19974 7.00049L0.165642 0.966392C-0.0552139 0.745536 -0.0552139 0.38747 0.165642 0.166642C0.38647 -0.0542139 0.744563 -0.0542139 0.965391 0.166642L6.99949 6.20073L13.0346 0.165642Z"></path>
+      </symbol>
     </svg>
     <div class="wrapper">
       <header class="header">
-        <div class="search">
-          <input type="search" placeholder="Введите ссылку/username"><span class="search-ico">
-            <svg class="svg-ico svg-ico_search">
-              <use xlink:href="#search"></use>
-            </svg></span>
-        </div>
-        <div class="user">
-          <div class="user__balans"><span class="user__balans_desc">Баланс</span><span class="user__balans_sum">61 544 &#8381;</span></div>
-          <div class="user__cab">
-            <div class="wrap-user-photo" style="background-image: url(static/images/content/user.jpg);"><img src="static/images/content/user.jpg" alt="Фото пользователя"></div>
-          </div>
-          <div class="box-drop-down">
-            <svg class="svg-ico svg-ico_down">
-              <use xlink:href="#down"></use>
-            </svg>
+        <div class="container">
+          <div class="head-wrap">
+            <div class="search">
+              <input type="search" placeholder="Введите ссылку/username"><span class="search-ico">
+                <svg class="svg-ico svg-ico_search">
+                  <use xlink:href="#search"></use>
+                </svg></span>
+            </div>
+            <div class="user">
+              <div class="user__balans"><span class="user__balans_desc">Баланс</span><span class="user__balans_sum">61 544 &#8381;</span></div>
+              <div class="user__cab">
+                <div class="wrap-user-photo" style="background-image: url(static/images/content/user.jpg);"><img src="static/images/content/user.jpg" alt="Фото пользователя"></div>
+              </div>
+              <div class="box-drop-down">
+                <svg class="svg-ico svg-ico_down">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+            </div>
+            <form class="user-cab">
+              <div class="user-cab__head">
+                <h2>Вход</h2><span class="close-ico">
+                  <svg class="svg-ico svg-ico_close">
+                    <use xlink:href="#close"></use>
+                  </svg></span>
+              </div>
+            </form>
           </div>
         </div>
       </header>

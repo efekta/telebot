@@ -1,16 +1,25 @@
 header.header
-	.search
-		input(type="search" placeholder="Введите ссылку/username")
-		span.search-ico
-			svg.svg-ico.svg-ico_search
-				use(xlink:href="#search")
-	.user
-		.user__balans
-			span.user__balans_desc Баланс
-			span.user__balans_sum 61 544 &#8381;
-		.user__cab
-			.wrap-user-photo(style="background-image: url(static/images/content/user.jpg);")
-				img(src="static/images/content/user.jpg", alt="Фото пользователя")
-		.box-drop-down
-			svg.svg-ico.svg-ico_down
-				use(xlink:href="#down")
+	.container
+		.head-wrap
+			.search
+				input(type="search" placeholder="Введите ссылку/username")
+				span.search-ico
+					svg.svg-ico.svg-ico_search
+						use(xlink:href="#search")
+			.user
+				.user__balans
+					span.user__balans_desc Баланс
+					span.user__balans_sum 61 544 &#8381;
+				.user__cab
+					.wrap-user-photo(style="background-image: url(static/images/content/user.jpg);")
+						img(src="static/images/content/user.jpg", alt="Фото пользователя")
+				.box-drop-down
+					svg.svg-ico.svg-ico_down
+						use(xlink:href="#down")
+			form.user-cab
+				.user-cab__head
+					h2 Вход
+					span.close-ico
+						svg.svg-ico.svg-ico_close
+							use(xlink:href="#close")
+
