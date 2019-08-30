@@ -81,10 +81,14 @@
 .box-drop-down {
 	width: 13px;
 	height: 7px;
+	cursor: pointer;
 	.svg-ico_down {
 		width: inherit;
 		height: inherit;
 		fill: #B3B3B3;
+	}
+	&:hover .svg-ico_down {
+		fill: #809EFF;
 	}
 }
 @media screen and (max-width: 992px) {

@@ -40,15 +40,8 @@
 	line-height: 22px;
 	letter-spacing: 0.05em;
 	color: #B3B3B3;
-
 	span {
 		margin-left: 30px;
-		transition: all .3s ease;
-	}
-	.svg-ico {
-		width: 18px;
-		height: 16px;
-		fill: #B3B3B3;
 		transition: all .3s ease;
 	}
 	&:hover span {
@@ -57,4 +50,10 @@
 	&:hover .svg-ico {
 		fill: #809EFF;
 	}
+}
+.svg-ico {
+	width: 18px;
+	height: 16px;
+	fill: #B3B3B3;
+	transition: all .3s ease;
 }
