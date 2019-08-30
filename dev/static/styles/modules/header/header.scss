@@ -124,6 +124,7 @@
 	label {
 		display: block;
 		margin: 20px 0;
+		font-size: 14px;
 	}
 	input {
 		display: block;
@@ -132,6 +133,10 @@
 		border: 1px solid rgba(0, 0, 0, 0.05);
 		padding: 12px 20px;
 	}
+input::-webkit-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; }
+input:-ms-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; }
+input::-ms-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; }
+input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; } 
 }
 @media screen and (max-width: 992px) {
 	.header {
