@@ -6,6 +6,7 @@
 	min-height: 120px;
 	background: $white;
 	box-shadow: 0px 4px 26px rgba(0, 0, 0, 0.03);
+	margin-bottom: 80px;
 }
 .head-wrap {
 	position: relative;
@@ -84,7 +85,7 @@
 }
 .box-drop-down {
 	width: 13px;
-	height: 7px;
+	height: 13px;
 	cursor: pointer;
 	.svg-ico_down {
 		width: inherit;
@@ -94,6 +95,12 @@
 	&:hover .svg-ico_down {
 		fill: #809EFF;
 	}
+}
+.box-drop-down_up {
+    transform: rotate(180deg);
+    .svg-ico_down {
+    	fill: #809EFF;
+    }
 }
 .user-cab {
 	position: absolute;
@@ -106,19 +113,24 @@
 	border: 1px solid rgba(255, 255, 255, 0.9);
 	border-radius: 30px;
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+	display: none;
+}
+.user-cab_show {
+	display: block;
 }
 .user-cab__head {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 20px;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+	padding-bottom: 20px;
 }
 .user-cab__head .title {
 	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 0.05em;
 }
 .user-cab__body {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	// margin-bottom: 20px;
 }
 .user-cab__input-wrap {
 	label {
@@ -137,6 +149,53 @@ input::-webkit-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight:
 input:-ms-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; }
 input::-ms-input-placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; }
 input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-family: 'Gilroy', sans-serif; } 
+}
+.user-cab__footer {
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	a {
+		font-size: 18px;
+		line-height: 22px;
+		letter-spacing: 0.05em;
+		
+	}
+	.user-cab__link-reg {
+		font-size: 16px;
+		line-height: 19px;
+		color: #809EFF;
+		letter-spacing: 0.05em;
+	}
+}
+.wrap-btn {
+	margin-bottom: 20px;
+}
+.close-ico {
+	cursor: pointer;
+}
+.social {
+	display: flex;
+    justify-content: center;
+	padding-top: 20px;
+	border-top: 2px solid rgba(0, 0, 0, 0.05);
+	li {
+		margin: 0 20px;
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			background: linear-gradient(to right, #ADD4DB, #B1C4E2);
+			margin-bottom: 0;
+			svg {
+				fill: $white;
+				width: 26px;
+				height: 15px;
+			}
+		}
+	}
 }
 @media screen and (max-width: 992px) {
 	.header {

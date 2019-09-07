@@ -56,6 +56,21 @@ button { outline: none; font-family: 'Gilroy', sans-serif; }
   letter-spacing: 0.05em;
   font-weight: 900;
 }
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  color: $white;
+  padding: 12px 39px;
+  background: #809EFF;
+  border-radius: 23px;
+}
+.content {
+  padding-top: 200px;
+  padding-left: 80px;
+  padding-right: 80px;
+  width: calc(100% - 300px);
+  margin-left: auto;
+}
 label {
   color: #333333;
   font-weight: bold;

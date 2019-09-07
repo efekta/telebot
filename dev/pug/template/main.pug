@@ -21,9 +21,10 @@ html(lang="ru-RU")
 		.wrapper
 			include ../modules/header/header
 			include ../modules/navbar/navbar
-			main.main
-				block content
 
+			block content
+			include ../modules/content/content.pug
+					
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
 		script(src="static/js/main.js")
