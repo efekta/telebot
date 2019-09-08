@@ -1,12 +1,12 @@
 header.header
 	.container
 		.head-wrap
-			.search
+			.head-wrap__search
 				input(type="search" placeholder="Введите ссылку/username")
 				span.search-ico
 					svg.svg-ico.svg-ico_search
 						use(xlink:href="#search")
-			.user
+			.head-wrap__user
 				.user__balans
 					span.user__balans_desc Баланс
 					span.user__balans_sum 61 544 &#8381;
@@ -16,7 +16,7 @@ header.header
 				.box-drop-down
 					svg.svg-ico.svg-ico_down
 						use(xlink:href="#down")
-			form.user-cab
+			form.head-wrap__user-cab
 				.user-cab__head
 					h2.title Вход
 					span.close-ico

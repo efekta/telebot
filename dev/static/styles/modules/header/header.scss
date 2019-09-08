@@ -14,9 +14,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: 0 80px;
 }
-.search {
+.head-wrap__search {
 	position: relative;
 	min-width: 460px;
 	border: 1px solid rgba(0, 0, 0, 0.05);
@@ -47,7 +46,7 @@
 	height: 20px;
 	fill: $white;
 }
-.user {
+.head-wrap__user {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -102,7 +101,7 @@
     	fill: #809EFF;
     }
 }
-.user-cab {
+.head-wrap__user-cab {
 	position: absolute;
 	top: 115px;
 	right: 0;
@@ -114,8 +113,9 @@
 	border-radius: 30px;
 	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
 	display: none;
+	z-index: 2;
 }
-.user-cab_show {
+.head-wrap__user-cab_show {
 	display: block;
 }
 .user-cab__head {

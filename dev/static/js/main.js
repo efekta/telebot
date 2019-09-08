@@ -1,12 +1,29 @@
 $(document).ready(function () {
     svg4everybody({});
     $('.box-drop-down').on('click', function() {
-    	$('.user-cab').toggleClass('user-cab_show');
+    	$('.head-wrap__user-cab').toggleClass('head-wrap__user-cab_show');
     })
 
     $('.close-ico').on('click', function() {
-    	$('.user-cab').removeClass('user-cab_show');
+    	$('.head-wrap__user-cab').removeClass('head-wrap__user-cab_show');
     })
+
+    /* Показать еще */
+
+    $('.more a').on('click', function(){
+      $('.canal_hide').toggleClass('canal_show');
+    })
+    $('.more a').click(function(){
+      if (!$(this).data('status')) {
+        $(this).html('Скрыть все');
+        $(this).data('status', true);
+      }
+      else {
+       $(this).html('Показать все');
+        $(this).data('status', false);
+      }
+    });
+
 });
 
 

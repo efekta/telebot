@@ -60,6 +60,12 @@ ul.tabs li.current {
 .tab_content.current {
   display: inherit;
 }
+.tab_content.current .canal_hide {
+  display: none !important;
+}
+.tab_content.current .canal_show {
+  display: block !important;
+}
 .wrap-inner-tabs {
 
   ul.tabs li {
