@@ -135,11 +135,11 @@
 
 @media screen and (max-width: 1200px) {
 	.box-content__head {
-		padding: 0;
+		padding: 20px 20px;
 	}
 	.box-content__body {
-		padding-left: 0;
-		padding-right: 0;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
@@ -148,10 +148,23 @@
 		width: 100%;
 	}
 }
+@media screen and (max-width: 520px) {
 
-
-
-
-
+	.canal__item_logo {
+		margin-right: 0;
+	}
+	.canal__item_logo span {
+	    width: 30px;
+	    height: 30px;
+	}
+	.canal__item_wrapp .canal__item.canal__item_inner,
+	.canal__item_wrapp .canal__item {
+		font-size: 14px;
+	}
+	.box-content__head, .box-content__body {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
 
 
