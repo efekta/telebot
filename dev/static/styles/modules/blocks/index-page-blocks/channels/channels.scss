@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	font-weight: bold;
+	margin-bottom: 20px;
 }
 .canal__item_left {
 
@@ -84,3 +85,34 @@
 .svg-wrap {
 	margin-right: 5px;
 }
+.canal:hover {
+	.text-shadow {
+		text-shadow: 2px 3px 2px rgba(51,51,51,0.4);
+	}
+	.svg-wrap-shadow {
+		box-shadow: 2px 3px 2px rgba(51,51,51,0.4);
+	}
+}
+
+.canal:hover {
+	.svg-ico-user-canal-logo, .svg-ico-small_line-chart, .svg-ico-podpischic {
+		-webkit-filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.4));
+		filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.4));
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
