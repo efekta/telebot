@@ -8,7 +8,7 @@
 	background: $white;
 	box-shadow: 4px 0px 26px rgba(0, 0, 0, 0.03);
 }
-.logo {
+.navbar__logo {
 	display: block;
 	margin-bottom: 70px;
 	font-family: 'Avenir Next Cyr';
@@ -57,3 +57,54 @@
 	fill: #B3B3B3;
 	transition: all .3s ease;
 }
+.navbar-menu__list::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #c4c4c4;
+}
+
+.navbar-menu__list::-webkit-scrollbar
+{
+	width: 3px;
+	height: 5px;
+	background-color: #efefef;
+}
+
+.navbar-menu__list::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #e9e6e6;
+}
+@media screen and (max-width: 1200px) {
+
+	.navbar {
+		width: 100%;
+		height: auto;
+		right: 0;
+	}
+	.navbar__logo {
+		margin-bottom: 20px;
+	}
+	.navbar-menu__list {
+		display: flex;
+		justify-content: space-between;
+		overflow-x: scroll;
+	}
+	.navbar-menu__item {
+		margin: 5px;
+
+	}
+	.navbar-menu__item.active a:before {
+    	top: 100%;
+    	width: 100%;
+    	height: 3px;
+	}
+	.navbar-menu__link {
+		font-size: 0;
+		padding-left: 0;
+		.svg-ico {
+			width: 100%;
+		}
+	}
+}
+

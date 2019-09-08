@@ -5,7 +5,7 @@
 	margin-bottom: 20px;
 }
 
-.canal__item_right {
+.canal__item_wrapp {
 	.canal__item {
 		font-size: 20px;
 		font-weight: 500;
@@ -99,7 +99,7 @@
 	}
 
 }
-.tab_content {
+.wrap-inner-tabs .tab_content {
 	height: 389px;		
 	overflow-y: scroll;
 }
@@ -133,10 +133,20 @@
 	color: #809EFF;
 }
 
+@media screen and (max-width: 1200px) {
+	.box-content__head {
+		padding: 0;
+	}
+	.box-content__body {
+		padding-left: 0;
+	}
+}
 
-
-
-
+@media screen and (max-width: 1200px) {
+	.box-content__item {
+		width: 100%;
+	}
+}
 
 
 

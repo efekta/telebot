@@ -196,22 +196,19 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 		}
 	}
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
 	.header {
 		width: 100%;
 		padding: 0 20px;
 	}
-	.navbar {
+
+	.head-wrap__search {
+		// min-width: 50%;
 		display: none;
 	}
-}
-
-
-@media screen and (max-width: 768px) {
-	.search {
-		min-width: 50%;
+	.head-wrap__user {
+		// width: 50%;
+		display: none;
 	}
-	.user {
-		width: 50%;
-	}
+
 }
