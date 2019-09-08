@@ -1,1 +1,58 @@
 .box-content__item.channels
+	h2.box-content__head Каналы
+	.box-content__body
+		ul.content-title.tabs
+			li.tab-link.current(data-tab="tab-1") Прирост
+
+			li.tab-link(data-tab="tab-2") Просмотров на пост
+
+			li.tab-link(data-tab="tab-3") По числу подпищиков
+
+		.tab_container
+			#tab-1.tab_content.current
+				.wrap-inner-tabs
+					ul.tabs
+						li.tab-link.current(data-tab="tab-1_1") Сегодня
+
+						li.tab-link(data-tab="tab-1_2") Вчера
+
+						li.tab-link(data-tab="tab-1_3") Неделя
+
+					#tab-1_1.tab_content.current
+						.canal
+							.canal__item_left
+								.canal__item.canal__item_logo
+									span
+										svg.svg-ico
+											use(xlink:href="#photo-logo")
+								.canal__item.canal__item_name
+									p Название канала
+									p
+										span.svg-wrap
+											svg.svg-ico.svg-ico-user-canal-logo
+												use(xlink:href="#user-canal-logo")
+										span.canal-num 131414
+							.canal__item_right
+								.canal__item
+									span
+										svg.svg-ico.svg-ico-podpischic
+											use(xlink:href="#podpischic")
+								.canal__item
+									span 43 545
+								.canal__item
+									span
+										svg.svg-ico.svg-ico-small_line-chart
+											use(xlink:href="#small_line-chart")
+
+
+					#tab-1_2.tab_content 2
+					#tab-1_3.tab_content 3
+
+			#tab-2.tab_content
+				.wrap-inner-tabs
+					ul.tabs
+						li.tab-link.current(data-tab="tab-2_1") Сегодня
+						li.tab-link(data-tab="tab-2_2") Вчера
+					#tab-2_1.tab_content.current 2-21
+					#tab-2_2.tab_content 2-22
+			#tab-3.tab_content 3

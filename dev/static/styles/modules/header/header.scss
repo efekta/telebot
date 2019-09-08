@@ -107,7 +107,7 @@
 	top: 115px;
 	right: 0;
 	width: 500px;
-	height: 503px;
+	// height: 503px;
 	padding: 20px;
 	background: $white;
 	border: 1px solid rgba(255, 255, 255, 0.9);
@@ -153,7 +153,6 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 .user-cab__footer {
 	text-align: center;
 	padding-top: 20px;
-	padding-bottom: 20px;
 	a {
 		font-size: 18px;
 		line-height: 22px;

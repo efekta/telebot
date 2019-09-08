@@ -1,0 +1,86 @@
+.canal {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+}
+.canal__item_left {
+
+}
+.canal__item_right {
+	.canal__item {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+		color: #55FF70;
+		&:first-child {
+			margin-right: 23px;
+		}
+		&:last-child {
+			margin-left: 30px;
+		}
+	}
+}
+.canal__item {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 19px;
+	color: #333;
+	span {
+		display: inline-block;
+	}
+}
+.canal__item_logo {
+	margin-right: 20px;
+	span {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    background: linear-gradient(to top, #AFD9FF, #7FBAFF);
+	}
+}
+.canal__item_logo {
+	svg {
+		width: 14px;
+		height: 12px;
+		fill: $white;
+	}
+}
+.canal__item_name {
+	p {
+		color: #333333;
+	
+		span {
+			color: #B3B3B3;
+		}
+	}
+	.svg-ico-user-canal-logo {
+		width: 8px;
+		height: 10px;
+		fill: #ccc;
+	}
+}
+.svg-ico-podpischic {
+	fill: #55FF70;
+	width: 16px;
+	height: 20px;
+}
+.svg-ico-small_line-chart {
+	width: 26px;
+	height: 26px;
+	fill: #B3B3B3;
+}
+.canal__item_name .svg-wrap {
+	margin-right: 5px;
+}
+.canal-num {
+	font-size: 12px;
+	line-height: 14px;
+	color: #B3B3B3;
+}
+.svg-wrap {
+	margin-right: 5px;
+}

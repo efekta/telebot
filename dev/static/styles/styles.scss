@@ -8,7 +8,7 @@ html {
   height: 100%;
 }
 
-body { height: 100%; color: #333333; font-family: 'Gilroy', sans-serif;}
+body { height: 100%; color: #333333; font-family: 'Gilroy', sans-serif; letter-spacing: 0.05em;}
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
@@ -55,6 +55,7 @@ button { outline: none; font-family: 'Gilroy', sans-serif; }
   line-height: 52px;
   letter-spacing: 0.05em;
   font-weight: 900;
+  margin-bottom: 40px;
 }
 .btn {
   display: inline-block;
@@ -79,5 +80,6 @@ input::-webkit-input-placeholder { color: #ccc; font-size: 20px; font-weight: 40
 input:-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input::-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; } 
-//Модули
+
+
 @import "modules/modules";
