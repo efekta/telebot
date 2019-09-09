@@ -64,6 +64,10 @@ button { outline: none; font-family: 'Gilroy', sans-serif; }
   padding: 12px 39px;
   background: #809EFF;
   border-radius: 23px;
+  &:hover {
+    box-shadow: 0px 5px 20px rgba(126, 157, 255, 0.6);
+    border-radius: 23px;
+  }
 }
 .content {
   padding-top: 200px;
