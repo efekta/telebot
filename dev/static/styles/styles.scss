@@ -42,7 +42,6 @@ button { outline: none; font-family: 'Gilroy', sans-serif; }
 
 .wrapper {
   position: relative;
-  // height: 100%;
   background: #F9FAFC;
 }
 .container {
@@ -85,14 +84,25 @@ input:-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; fo
 input::-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; } 
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1852px) {
+  .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 40px;
+  }
+  .content  {
+    width: 100%;
+    padding-top: 318px;   
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media screen and (max-width: 1200px) {
   .container {
       max-width: 100%;
       margin: 0 auto;
       padding: 0 20px;
   }
-}
-@media screen and (max-width: 1200px) {
   .content  {
     width: 100%;
     padding-left: 20px;

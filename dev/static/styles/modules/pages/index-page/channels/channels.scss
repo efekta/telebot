@@ -11,12 +11,13 @@
 		font-weight: 500;
 		line-height: 24px;
 		color: #55FF70;
-		&:first-child {
-			margin-right: 23px;
-		}
-		&:last-child {
-			margin-left: 30px;
-		}
+		margin: 0 15px 0 11.5px;
+		// &:first-child {
+		// 	margin-right: 23px;
+		// }
+		// &:last-child {
+		// 	margin-left: 30px;
+		// }
 	}
 }
 .canal__item {
@@ -161,10 +162,7 @@
 	.canal__item_wrapp .canal__item {
 		font-size: 14px;
 	}
-	.box-content__head, .box-content__body {
-		padding-left: 0;
-		padding-right: 0;
-	}
+
 }
 
 
