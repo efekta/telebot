@@ -74,6 +74,7 @@ button { outline: none; font-family: 'Gilroy', sans-serif; }
   padding-right: 80px;
   width: calc(100% - 300px);
   margin-left: auto;
+
 }
 label {
   color: #333333;
@@ -95,6 +96,7 @@ input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family
     padding-top: 318px;   
     padding-left: 40px;
     padding-right: 40px;
+
   }
 }
 @media screen and (max-width: 1200px) {
