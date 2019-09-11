@@ -196,18 +196,22 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 		}
 	}
 }
-@media screen and (max-width: 1852px) { 
+@media screen and (max-width: 1200px) { 
 	.header {
 		width: 100%;
 		left: 0;
+		right: 0;
 		margin-bottom: 0;
 	}
 }
-@media screen and (max-width: 810px) { 
+@media screen and (max-width: 768px) { 
 	.head-wrap {
 		justify-content: flex-end;
 	}
 	.head-wrap__search {
 		display: none;
+	}
+	.head-wrap__user-cab {
+		width: 100%;
 	}
 }

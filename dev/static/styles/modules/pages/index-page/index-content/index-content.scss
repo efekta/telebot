@@ -2,10 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 40px;
-  // flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .box-content__item {
-  width: 710px;  
+  // width: 710px; 
+  width: 49%; 
 }
 .box-content__head {
   padding: 30px 40px;
@@ -91,16 +92,14 @@ ul.tabs li.current {
   }
 }
 @media screen and (max-width: 1852px) {
-  .box-content {
-    flex-wrap: wrap;
-  } 
-  .box-content__item {
-    width: 100%;
-    margin: 20px 40px;
+    ul.tabs li {
+    margin-right: 10px;
+    font-size: 18px;
   }
   
 }
-@media screen and (max-width: 1460px) {
+
+@media screen and (max-width: 1024px) {
   .box-content {
     flex-wrap: wrap;
   } 
