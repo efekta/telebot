@@ -1,5 +1,8 @@
 $(document).ready(function () {
+
     svg4everybody({});
+
+    /* User Form*/
     $('.box-drop-down').on('click', function() {
     	$('.head-wrap__user-cab').toggleClass('head-wrap__user-cab_show');
     })
@@ -7,6 +10,19 @@ $(document).ready(function () {
     $('.close-ico').on('click', function() {
     	$('.head-wrap__user-cab').removeClass('head-wrap__user-cab_show');
     })
+
+    $('.warning-wrapp__link').on('click', function(event) {
+      event.preventDefault();
+      $('.user-cab__body, .user-cab__footer').addClass('hide');
+      $('.user-cab__body_pass-recovery').addClass('show');
+    })
+
+    $('.pass-recovery__link').on('click', function(event) {
+      event.preventDefault();
+      $('.user-cab__body, .user-cab__footer').removeClass('hide');
+      $('.user-cab__body_pass-recovery').removeClass('show');
+    })
+
 
     /* Показать еще */
 
@@ -23,6 +39,9 @@ $(document).ready(function () {
         $(this).data('status', false);
       }
     });
+
+
+
 
 });
 

@@ -36,7 +36,12 @@ section { position: relative; }
 
 input,
 select,
-button { outline: none; font-family: 'Gilroy', sans-serif; }
+button { 
+  outline: none; 
+  font-family: 'Gilroy', sans-serif;
+  border: none;
+  background: transparent;
+}
 
 *, *:before, *:after { box-sizing: border-box; }
 
