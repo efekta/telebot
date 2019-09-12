@@ -264,6 +264,12 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 		line-height: 18px;
 	}
 }
+.pass-recovery-wrapp_message {
+	display: none;
+}
+.user-cab__body_recovery-pass-message {
+	
+}
 @media screen and (max-width: 1200px) { 
 	.header {
 		width: 100%;
