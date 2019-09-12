@@ -116,55 +116,105 @@
                 </svg>
               </div>
             </div>
-            <form class="head-wrap__user-cab">
-              <div class="user-cab__head">
-                <h2 class="user-cab__head-title">Вход</h2><span class="close-ico">
-                  <svg class="svg-ico svg-ico_close">
-                    <use xlink:href="#close"></use>
-                  </svg></span>
-              </div>
-              <div class="user-cab__body">
-                <div class="user-cab__input-wrap">
-                  <label for="email">Email</label>
-                  <input id="email" type="text" placeholder="Введите Email">
+            <form class="form-wrap__user-cab">
+              <div class="wrap__user-cab">
+                <div class="user-cab__head">
+                  <h2 class="user-cab__head-title">Вход</h2><span class="close-ico">
+                    <svg class="svg-ico svg-ico_close">
+                      <use xlink:href="#close"></use>
+                    </svg></span>
                 </div>
-                <div class="user-cab__input-wrap">
-                  <label for="pass">Пароль</label>
-                  <input id="pass" type="text" placeholder="Введите пароль">
-                  <p class="warning-wrapp"><span>
-                      <svg class="svg-ico svg-ico_warning">
-                        <use xlink:href="#warning"></use>
-                      </svg><span>Пароль неверный</span></span><a class="warning-wrapp__link" href="">Изменить</a></p>
+                <div class="user-cab__body">
+                  <div class="user-cab__input-wrap">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" placeholder="Введите Email">
+                  </div>
+                  <div class="user-cab__input-wrap">
+                    <label for="pass">Пароль</label>
+                    <input id="pass" type="text" placeholder="Введите пароль">
+                    <p class="warning-wrapp"><span>
+                        <svg class="svg-ico svg-ico_warning">
+                          <use xlink:href="#warning"></use>
+                        </svg><span>Пароль неверный</span></span><a class="warning-wrapp__link" href="">Изменить</a></p>
+                  </div>
+                </div>
+                <div class="user-cab__footer">
+                  <div class="wrap-btn"><a class="btn user-cab__link user-cab__link-enter" href="">Войти</a></div>
+                  <div class="wrap-btn"><a class="user-cab__link user-cab__link-reg">Регистрация</a></div>
+                  <ul class="social">
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="user-cab__footer">
-                <div class="wrap-btn"><a class="btn user-cab__link user-cab__link-enter" href="">Войти</a></div>
-                <div class="wrap-btn"><a class="user-cab__link user-cab__link-reg" href="">Регистрация</a></div>
-                <ul class="social">
-                  <li><a href="">
-                      <svg class="svg-ico svg-ico_form-vk-logo">
-                        <use xlink:href="#form-vk-logo"></use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg class="svg-ico svg-ico_form-vk-logo">
-                        <use xlink:href="#form-vk-logo"></use>
-                      </svg></a></li>
-                  <li><a href="">
-                      <svg class="svg-ico svg-ico_form-vk-logo">
-                        <use xlink:href="#form-vk-logo"></use>
-                      </svg></a></li>
-                </ul>
-              </div>
-              <div class="user-cab__body_pass-recovery"><a class="pass-recovery__link" href="">
-                  <svg class="svg-ico svg-ico-prev">
-                    <use xlink:href="#prev"></use>
-                  </svg><span>Назад</span></a>
-                <div class="user-cab__input-wrap user-cab__input-wrap_recovery">
-                  <label for="email">Восстановление пароля</label>
-                  <input id="email" type="text" placeholder="Введите Email">
+              <div class="pass-recovery-wrapp">
+                <div class="user-cab__head">
+                  <h2 class="user-cab__head-title">Вход</h2><span class="close-ico">
+                    <svg class="svg-ico svg-ico_close">
+                      <use xlink:href="#close"></use>
+                    </svg></span>
                 </div>
-                <div class="wrap-btn">
-                  <button class="btn user-cab__link user-cab__link-enter" type="submit">Войти</button>
+                <div class="user-cab__body user-cab__body_pass-recovery"><a class="pass-recovery__link" href="">
+                    <svg class="svg-ico svg-ico-prev">
+                      <use xlink:href="#prev"></use>
+                    </svg><span>Назад</span></a>
+                  <div class="user-cab__input-wrap user-cab__input-wrap_recovery">
+                    <label for="email_recovery">Восстановление пароля</label>
+                    <input id="email_recovery" type="text" placeholder="Введите Email">
+                  </div>
+                  <div class="wrap-btn">
+                    <button class="btn user-cab__link user-cab__link-enter" type="submit">Войти</button>
+                  </div>
+                </div>
+              </div>
+              <div class="user-cab-regisrtation">
+                <div class="user-cab__head">
+                  <h2 class="user-cab__head-title">Регистрация</h2><span class="close-ico">
+                    <svg class="svg-ico svg-ico_close">
+                      <use xlink:href="#close"></use>
+                    </svg></span>
+                </div>
+                <div class="user-cab__body">
+                  <div class="user-cab__input-wrap">
+                    <label for="email_reg">Email</label>
+                    <input id="email_reg" type="text" placeholder="Введите Email">
+                  </div>
+                  <div class="user-cab__input-wrap">
+                    <label for="pass_reg">Пароль</label>
+                    <input id="pas_regs" type="text" placeholder="Введите пароль">
+                  </div>
+                  <div class="user-cab__input-wrap">
+                    <label for="pass_two">Пароль повторно</label>
+                    <input id="pass_two" type="text" placeholder="Введите пароль еще раз">
+                  </div>
+                  <div class="capcha"><span>Место для капчи</span></div>
+                </div>
+                <div class="user-cab__footer">
+                  <div class="wrap-btn"><a class="btn user-cab__link user-cab__link-enter" href="">Зарегистрироваться</a></div>
+                  <ul class="social">
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg class="svg-ico svg-ico_form-vk-logo">
+                          <use xlink:href="#form-vk-logo"></use>
+                        </svg></a></li>
+                  </ul>
                 </div>
               </div>
             </form>
@@ -1568,7 +1618,7 @@
               <div class="tab_container tab_container_publications">
                 <div class="tab_content current" id="tab-pub-1">
                   <div class="publications-wrapp">
-                    <ul class="publications-chart" id="publications-chart">
+                    <ul class="publications-chart">
                       <li class="publications-chart__item"><span class="publications-chart__date">1</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">2</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">3</span></li>
@@ -1607,7 +1657,7 @@
                 </div>
                 <div class="tab_content" id="tab-pub-2">
                   <div class="publications-wrapp">
-                    <ul class="publications-chart" id="publications-chart">
+                    <ul class="publications-chart">
                       <li class="publications-chart__item"><span class="publications-chart__date">1</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">2</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">3</span></li>
@@ -1646,7 +1696,7 @@
                 </div>
                 <div class="tab_content" id="tab-pub-3">
                   <div class="publications-wrapp">
-                    <ul class="publications-chart" id="publications-chart">
+                    <ul class="publications-chart">
                       <li class="publications-chart__item"><span class="publications-chart__date">1</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">2</span></li>
                       <li class="publications-chart__item"><span class="publications-chart__date">3</span></li>

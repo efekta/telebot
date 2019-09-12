@@ -17,50 +17,92 @@ header.header
 				.box-drop-down
 					svg.svg-ico.svg-ico_down
 						use(xlink:href="#down")
-			form.head-wrap__user-cab
-				.user-cab__head
-					h2.user-cab__head-title Вход
-					span.close-ico
-						svg.svg-ico.svg-ico_close
-							use(xlink:href="#close")
-				.user-cab__body
-					.user-cab__input-wrap
-						label(for="email") Email
-						input#email(type="text" placeholder="Введите Email")
-					.user-cab__input-wrap
-						label(for="pass") Пароль
-						input#pass(type="text" placeholder="Введите пароль")
-						p.warning-wrapp
-							span
-								svg.svg-ico.svg-ico_warning
-									use(xlink:href="#warning")
-								span Пароль неверный
-							a.warning-wrapp__link(href="") Изменить
-				.user-cab__footer
-					.wrap-btn
-						a.btn.user-cab__link.user-cab__link-enter(href="") Войти
-					.wrap-btn
-						a.user-cab__link.user-cab__link-reg(href="") Регистрация
-					ul.social
-						li
-							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
-						li
-							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
-						li
-							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
-				.user-cab__body_pass-recovery
-					a.pass-recovery__link(href="")
-						svg.svg-ico.svg-ico-prev
-							use(xlink:href="#prev")
-						span Назад
-					.user-cab__input-wrap.user-cab__input-wrap_recovery
-						label(for="email") Восстановление пароля
-						input#email(type="text" placeholder="Введите Email")
-					.wrap-btn
-						button(type="submit").btn.user-cab__link.user-cab__link-enter Войти
+			form.form-wrap__user-cab
+				.wrap__user-cab
+					.user-cab__head
+						h2.user-cab__head-title Вход
+						span.close-ico
+							svg.svg-ico.svg-ico_close
+								use(xlink:href="#close")
+					.user-cab__body
+						.user-cab__input-wrap
+							label(for="email") Email
+							input#email(type="text" placeholder="Введите Email")
+						.user-cab__input-wrap
+							label(for="pass") Пароль
+							input#pass(type="text" placeholder="Введите пароль")
+							p.warning-wrapp
+								span
+									svg.svg-ico.svg-ico_warning
+										use(xlink:href="#warning")
+									span Пароль неверный
+								a.warning-wrapp__link(href="") Изменить
+					.user-cab__footer
+						.wrap-btn
+							a.btn.user-cab__link.user-cab__link-enter(href="") Войти
+						.wrap-btn
+							a.user-cab__link.user-cab__link-reg Регистрация
+						ul.social
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")
+				.pass-recovery-wrapp
+					.user-cab__head
+						h2.user-cab__head-title Вход
+						span.close-ico
+							svg.svg-ico.svg-ico_close
+								use(xlink:href="#close")
+					.user-cab__body.user-cab__body_pass-recovery
+						a.pass-recovery__link(href="")
+							svg.svg-ico.svg-ico-prev
+								use(xlink:href="#prev")
+							span Назад
+						.user-cab__input-wrap.user-cab__input-wrap_recovery
+							label(for="email_recovery") Восстановление пароля
+							input#email_recovery(type="text" placeholder="Введите Email")
+						.wrap-btn
+							button(type="submit").btn.user-cab__link.user-cab__link-enter Войти
+				.user-cab-regisrtation
+					.user-cab__head
+						h2.user-cab__head-title Регистрация
+						span.close-ico
+							svg.svg-ico.svg-ico_close
+								use(xlink:href="#close")
+					.user-cab__body
+						.user-cab__input-wrap
+							label(for="email_reg") Email
+							input#email_reg(type="text" placeholder="Введите Email")
+						.user-cab__input-wrap
+							label(for="pass_reg") Пароль
+							input#pas_regs(type="text" placeholder="Введите пароль")
+						.user-cab__input-wrap
+							label(for="pass_two") Пароль повторно
+							input#pass_two(type="text" placeholder="Введите пароль еще раз")
+						.capcha
+							span Место для капчи
+
+					.user-cab__footer
+						.wrap-btn
+							a.btn.user-cab__link.user-cab__link-enter(href="") Зарегистрироваться
+						ul.social
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")
+							li
+								a(href="")
+									svg.svg-ico.svg-ico_form-vk-logo
+										use(xlink:href="#form-vk-logo")

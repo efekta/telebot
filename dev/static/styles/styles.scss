@@ -83,8 +83,9 @@ button {
 }
 label {
   color: #333333;
-  font-weight: bold;
+  font-weight: 500;
 }
+
 input::-webkit-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input:-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input::-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
@@ -94,13 +95,13 @@ input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family
   .container {
 //       max-width: 100%;
 //       margin: 0 auto;
-      padding: 0 40px;
+      padding: 0 30px;
   }
   .content  {
 //     width: 100%;
 //     padding-top: 318px;   
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
 
   }
 }
