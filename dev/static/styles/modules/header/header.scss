@@ -254,10 +254,11 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 .capcha {
 	text-align: center;
 	margin: 20px 0 0 0;
-	span {
-		width: 180px;
+	input {
+		// width: 180px;
 		display: inline-block;
-		padding: 21px 0;
+		text-align: center;
+		padding: 21px 20px;
 		background: rgba(0, 0, 0, 0.05);
 		border-radius: 10px;
 		font-size: 16px;
@@ -268,7 +269,7 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 	display: none;
 }
 .user-cab__body_recovery-pass-message {
-	
+
 }
 @media screen and (max-width: 1200px) { 
 	.header {
