@@ -16,34 +16,16 @@ header.header
 				.box-drop-down
 					svg.svg-ico.svg-ico_down
 						use(xlink:href="#down")
-			form.head-wrap__user-cab
-				.user-cab__head
-					h2.user-cab__head-title Вход
-					span.close-ico
-						svg.svg-ico.svg-ico_close
-							use(xlink:href="#close")
-				.user-cab__body
-					.user-cab__input-wrap
-						label(for="email") Email
-						input#email(type="text" placeholder="Введите Email")
-					.user-cab__input-wrap
-						label(for="pass") Пароль
-						input#pass(type="text" placeholder="Введите пароль")
-				.user-cab__footer
-					.wrap-btn
-						a.btn.user-cab__link.user-cab__link-enter(href="") Войти
-					.wrap-btn
-						a.user-cab__link.user-cab__link-reg(href="") Регистрация
-					ul.social
+			.form-wrap__user-cab.user-autorize
+				.user-autorize__list-wrapp
+					ul
+						li
+							a(href="") 
+								span Профиль
 						li
 							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
+								span Поддержка
 						li
 							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
-						li
-							a(href="")
-								svg.svg-ico.svg-ico_form-vk-logo
-									use(xlink:href="#form-vk-logo")
+								span Выход
+				

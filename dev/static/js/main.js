@@ -8,7 +8,7 @@ $(document).ready(function () {
     })
 
     $('.close-ico').on('click', function() {
-    	$('.wrap__user-cab').addClass('hide');
+    	$('.form-wrap__user-cab').addClass('hide');
     })
 
     $('.warning-wrapp__link').on('click', function(event) {
