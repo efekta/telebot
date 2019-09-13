@@ -2,28 +2,35 @@
 	h2.favorites__title Избранные каналы
 
 	.favorites__content
-		.canal
-			.canal__item_wrapp
-				h3.favorite-title Канал
-				.canal__item.canal__item_logo
-					span
-						svg.svg-ico
-							use(xlink:href="#photo-logo")
-				.canal__item.canal__item_name
-					p.text-shadow Название канала
-			.canal__item_wrapp
-				h3.favorite-title подписчики
-				.canal__item
-					span 
-			.canal__item_wrapp
-				h3.favorite-title Канал
-				.canal__item
-					svg.svg-ico.svg-ico-podpischic
-						use(xlink:href="#podpischic")
-				.canal__item.canal__item_inner
-					span 43 545
-				.canal__item
-					span
-						svg.svg-ico.svg-ico-small_line-chart
-							use(xlink:href="#small_line-chart")
-	
+		.favorites-title-wrapp
+			span.favorite-title канал
+			span.favorite-title подписчики
+			span.favorite-title прирост
+			span.favorite-title просмотры на пост
+			span.favorite-title er
+		.favorite
+			.favorite__item.favorite__item--flex
+				span.favorite__item--ico
+					svg.svg-ico.svg-ico--favorite
+						use(xlink:href="#photo-logo")
+				p Название канала
+
+			.favorite__item
+				span 432 545
+
+			.favorite__item
+				span.favorite__item--green 43 545
+
+			.favorite__item.favorite__item--num
+				span 32 545
+				span.favorite__item--gray за 24ч:
+				span 32 545
+
+			.favorite__item.favorite__item--num
+				span 32%
+				span.favorite__item--gray за 24ч:
+				span 32%
+				svg.svg-ico.svg-ico-small_line-chart.favorite__item--gray
+					use(xlink:href="#small_line-chart")
+				svg.svg-ico.svg-ico--close.favorite__item--gray
+					use(xlink:href="#close")
