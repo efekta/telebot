@@ -93,13 +93,13 @@ input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family
 
 @media screen and (max-width: 1852px) {
   .container {
-//       max-width: 100%;
-//       margin: 0 auto;
+      max-width: 100%;
+      margin: 0 auto;
       padding: 0 30px;
   }
   .content  {
-//     width: 100%;
-//     padding-top: 318px;   
+    width: 100%;
+    padding-top: 318px;   
     padding-left: 30px;
     padding-right: 30px;
 
@@ -107,13 +107,13 @@ input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family
 }
 @media screen and (max-width: 1200px) {
   .container {
-      max-width: 100%;
-      margin: 0 auto;
+      // max-width: 100%;
+      // margin: 0 auto;
       padding: 0 20px;
   }
   .content  {
-    width: 100%;
-    padding-top: 318px;  
+    // width: 100%;
+    // padding-top: 318px;  
     padding-left: 20px;
     padding-right: 20px;
   }
