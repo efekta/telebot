@@ -5,3 +5,9 @@
 <p>
 	<a href="https://efekta.github.io/telebot/build/index_user.html">Главная (авторизованный пользователь)</a>
 </p>
+<p>
+	<a href="https://efekta.github.io/telebot/build/password_change.html">Смена пароля</a>
+</p>
+<p>
+	<a href="https://efekta.github.io/telebot/build/channel.html">Канал</a>
+</p>

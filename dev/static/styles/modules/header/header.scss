@@ -255,7 +255,6 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 	text-align: center;
 	margin: 20px 0 0 0;
 	input {
-		// width: 180px;
 		display: inline-block;
 		text-align: center;
 		padding: 21px 20px;
@@ -308,7 +307,7 @@ input::placeholder { color: #B3B3B3; font-size: 16px; font-weight: 500; font-fam
 		}
 	}
 }
-@media screen and (max-width: 1200px) { 
+@media screen and (max-width: 1860px) { 
 	.header {
 		width: 100%;
 		left: 0;

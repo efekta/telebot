@@ -1,8 +1,11 @@
 @import "header/header";
 @import "navbar/navbar";
+
 @import "pages/index-page/index-content/index-content";
 @import "pages/index-page/channels/channels";
 @import "pages/index-page/publications/publications";
 @import "pages/index-page/index-content/favorites";
 
+@import "pages/password_change/password_change";
 
+@import "pages/channel/channel";

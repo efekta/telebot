@@ -18,7 +18,7 @@ ul, li {
   padding: 0;
 }
 
-a { text-decoration: none; transition: all .3s ease;}
+a { text-decoration: none; cursor: pointer; transition: all .3s ease;}
 
 p { margin: 0; }
 
@@ -41,6 +41,7 @@ button {
   font-family: 'Gilroy', sans-serif;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
@@ -48,6 +49,7 @@ button {
 .wrapper {
   position: relative;
   background: #F9FAFC;
+  height: 100%;
 }
 .container {
   max-width: 1460px;

@@ -1,0 +1,139 @@
+.channel {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.channel__item-wrapp {
+    width: 32.5%;
+    .channel__item:last-child {
+        margin-bottom: 0;
+    }
+}
+.channel__item {
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+    border-radius: 34px;
+    margin-bottom: 20px;
+    .channel__item-box:last-child {
+        margin-bottom: 0;
+    }
+}
+.channel__head {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+}
+.channel-logo {    
+    min-width: 80px;
+    min-height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #AFD9FF, #7FBAFF);
+    .svg-ico {
+        width: 30px;
+        height: 26px;
+        fill: #fff;
+    }
+}
+.channel-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    margin: 0 10px 0 20px;
+}
+.channel__item.channel__item--name {
+    p {
+        font-size: 16px;
+        line-height: 160%;
+        letter-spacing: 0.05em;
+    }
+    .svg-ico--down {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 13px;
+        height: 7px;
+    }
+}
+.svg-ico--heart {
+    width: 20px;
+    height: 18px;
+}
+
+
+.channel__item-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.channel-lid {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.channel-sum {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #809EFF;
+}
+.channel-text {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #B3B3B3;
+}
+.channel-text--purple {
+    color: #809EFF; 
+}
+.chanel-list {
+    display: flex;
+    margin-bottom: 40px;
+    .chanel-list__item {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .svg-ico {
+            margin: 0 10px;
+            margin-top: 25px;
+            width: 40px;
+            height: 40px;
+            fill: #fff;
+        }
+    }
+    .chanel-list__link {
+        display: flex;
+        align-items: center;
+        height: 56px;
+        overflow: hidden;
+        padding: 0 20px;
+        background: linear-gradient(75.59deg, #ADD4DB 0%, #B1C4E2 100%);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 20px;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
