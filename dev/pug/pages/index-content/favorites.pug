@@ -2,61 +2,71 @@
 	h2.favorites__title Избранные каналы
 
 	.favorites__content
-		.favorites-title-wrapp
-			span.favorite-title канал
-			span.favorite-title подписчики
-			span.favorite-title прирост
-			span.favorite-title просмотры на пост
-			span.favorite-title er
 		.favorite
-			.favorite__item.favorite__item--flex
-				span.favorite__item--ico
-					svg.svg-ico.svg-ico--favorite
-						use(xlink:href="#photo-logo")
-				p Название канала
+			.favorite__item
+				span.favorite-title канал
+				.favorite__item--flex
+					span.channel-wrapp-pic.favorite__item--ico
+						svg.svg-ico.svg-ico--favorite
+							use(xlink:href="#photo-logo")
+					p Название канала
 
 			.favorite__item
-				span 432 545
+				span.favorite-title подписчики
+				.favorite__item--flex
+					span.favorite-desc 432 545
 
 			.favorite__item
-				span.favorite__item--green 43 545
+				span.favorite-title прирост
+				.favorite__item--flex
+					span.favorite__item--green 43 545
 
 			.favorite__item.favorite__item--num
-				span 32 545
-				span.favorite__item--gray за 24ч:
-				span 32 545
+				span.favorite-title просмотры на пост
+				.favorite__item--flex
+					span.favorite-desc 32 545
+					span.favorite__item--gray за 24ч:
+					span 32 545
 
 			.favorite__item.favorite__item--num
-				span 32%
-				span.favorite__item--gray за 24ч:
-				span 32%
-				svg.svg-ico.svg-ico-small_line-chart.favorite__item--gray
-					use(xlink:href="#small_line-chart")
-				svg.svg-ico.svg-ico--close.favorite__item--gray
-					use(xlink:href="#close")
+				span.favorite-title er
+				.favorite__item--flex
+					span.favorite-desc 32%
+					span.favorite__item--gray за 24ч:
+					span.favorite-desc 32%
+					svg.svg-ico.svg-ico-small_line-chart.favorite__item--gray
+						use(xlink:href="#small_line-chart")
+					svg.svg-ico.svg-ico--close.favorite__item--gray
+						use(xlink:href="#close")
 		.favorite
-			.favorite__item.favorite__item--flex
-				span.favorite__item--ico
-					svg.svg-ico.svg-ico--favorite
-						use(xlink:href="#photo-logo")
-				p Название канала
+			.favorite__item
+				.favorite__item--flex
+					span.channel-wrapp-pic.favorite__item--ico
+						svg.svg-ico.svg-ico--favorite
+							use(xlink:href="#photo-logo")
+					p Название канала
 
 			.favorite__item
-				span 432 545
+				.favorite__item--flex
+					span.favorite-desc 432 545
 
 			.favorite__item
-				span.favorite__item--green 43 545
+				.favorite__item--flex
+					span.favorite__item--green 43 545
 
 			.favorite__item.favorite__item--num
-				span 32 545
-				span.favorite__item--gray за 24ч:
-				span 32 545
+
+				.favorite__item--flex
+					span.favorite-desc 32 545
+					span.favorite__item--gray за 24ч:
+					span 32 545
 
 			.favorite__item.favorite__item--num
-				span 32%
-				span.favorite__item--gray за 24ч:
-				span 32%
-				svg.svg-ico.svg-ico-small_line-chart.favorite__item--gray
-					use(xlink:href="#small_line-chart")
-				svg.svg-ico.svg-ico--close.favorite__item--gray
-					use(xlink:href="#close")
+				.favorite__item--flex
+					span.favorite-desc 32%
+					span.favorite__item--gray за 24ч:
+					span.favorite-desc 32%
+					svg.svg-ico.svg-ico-small_line-chart.favorite__item--gray
+						use(xlink:href="#small_line-chart")
+					svg.svg-ico.svg-ico--close.favorite__item--gray
+						use(xlink:href="#close")
