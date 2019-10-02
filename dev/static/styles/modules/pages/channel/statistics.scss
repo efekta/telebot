@@ -62,6 +62,8 @@
     color: #55FF70;
 
 }
-@media screen and (max-width: 560px) {
-
+@media screen and (max-width: 1024px) {
+    .box-content__item--statistics {
+        width: 100%;
+    }
 }

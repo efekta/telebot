@@ -56,3 +56,8 @@
 .text-right {
 	text-align: right;
 }
+@media screen and (max-width: 1024px) {
+    .box-content__item--mentions {
+        width: 100%;
+    }
+}

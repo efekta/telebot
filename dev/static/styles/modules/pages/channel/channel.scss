@@ -140,5 +140,22 @@
     }
 }
 
-
-
+@media screen and (max-width: 1024px) {
+    .chanel-list {
+       flex-wrap: wrap;
+       justify-content: space-between; 
+       margin-bottom: 0;
+        .chanel-list__item {
+            width: 49%;
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+    .channel {
+        flex-wrap: wrap;
+    }
+    .channel__item-wrapp {
+        width: 49%;
+        margin-bottom: 20px;
+    }
+}

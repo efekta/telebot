@@ -1,3 +1,17 @@
+.box-content__item.box-content__item--buy-advertising {
+	width: 100%;
+}
 .buy-advertising {
-	
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.buy-advertising-wrapp {
+	.statistic__date {
+		display: block;
+		margin-bottom: 20px;
+	}
+}
+.buy-advertising__item {
+	width: 19%;
 }
