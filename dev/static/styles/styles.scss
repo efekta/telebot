@@ -101,6 +101,38 @@ input:-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; fo
 input::-ms-input-placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; }
 input::placeholder { color: #ccc; font-size: 20px; font-weight: 400; font-family: 'Gilroy', sans-serif; } 
 
+.input-wrap-check input[type="checkbox"] {
+  cursor: pointer;
+  display: none;
+} 
+.input-wrap-check label {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 19px;
+}
+.input-wrap-check {
+  input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(126, 157, 255, 0.3);
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+  input[type="checkbox"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    width: 15px;
+    height: 11px;
+    background: url('../images/svg/check.svg') no-repeat;
+  }
+}
 @media screen and (max-width: 1852px) {
   .container {
       max-width: 100%;

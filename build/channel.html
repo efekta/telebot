@@ -655,10 +655,12 @@
         <div class="box-content">
           <div class="box-content__item box-content__item--buy-advertising">
             <div class="buy-advertisings">
-              <h2 class="box-content__head">Купили рекламу у канала</h2>
+              <h2 class="box-content__head box-content__head--inner">Купили рекламу у канала<span class="input-wrap-check">
+                  <input id="buy" type="checkbox">
+                  <label for="buy">Показывать репосты</label></span></h2>
               <div class="box-content__body">
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item"><span class="statistics-title">Размещенный пост</span>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
                   </div>
                   <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
@@ -672,23 +674,23 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item"><span class="statistics-title">Приход</span>
-                    <div class="buy-advertising-wrapp"><span>+2</span>
-                      <p><span>60 459</span><span>&rarr;</span><span>60 461</span></p>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
                     </div>
                   </div>
-                  <div class="buy-advertising__item"><span class="statistics-title">Период подсчета</span>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp">
-                      <p>0 часов 4 минут</p>
-                      <p><span>06.08.2019 13:55:22</span><span>&rarr;</span><span>06.08.2019 13:55:22</span></p>
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
                     </div>
                   </div>
-                  <div class="buy-advertising__item"><span class="statistics-title">Постов продвигается</span>
-                    <div class="buy-advertising-wrapp"><span>234</span></div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
                   <div class="buy-advertising__item">
@@ -702,14 +704,289 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item">
-                    <div class="buy-advertising-wrapp"><span>?</span></div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Размещенный пост</span>
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
+                  </div>
+                  <div class="buy-advertising__item"><span class="statistics-title statistics-title--mob">Рекламируемый канал</span>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title statistics-title--mob">Период подсчета</span>
+                    <div class="buy-advertising-wrapp">
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title statistics-title--mob">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
                   <div class="buy-advertising__item">
-                    <div class="buy-advertising-wrapp"><span>?</span></div>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Размещенный пост</span>
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
+                  </div>
+                  <div class="buy-advertising__item"><span class="statistics-title statistics-title--mob">Рекламируемый канал</span>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title statistics-title--mob">Период подсчета</span>
+                    <div class="buy-advertising-wrapp">
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title statistics-title--mob">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
                   <div class="buy-advertising__item">
-                    <div class="buy-advertising-wrapp"><span>234</span></div>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Размещенный пост</span>
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
+                  </div>
+                  <div class="buy-advertising__item"><span class="statistics-title statistics-title--mob">Рекламируемый канал</span>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title statistics-title--mob">Период подсчета</span>
+                    <div class="buy-advertising-wrapp">
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title statistics-title--mob">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
+                  </div>
+                  <div class="buy-advertising__item">
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Размещенный пост</span>
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
+                  </div>
+                  <div class="buy-advertising__item"><span class="statistics-title statistics-title--mob">Рекламируемый канал</span>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title statistics-title--mob">Период подсчета</span>
+                    <div class="buy-advertising-wrapp">
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title statistics-title--mob">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
+                  </div>
+                  <div class="buy-advertising__item">
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Размещенный пост</span>
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
+                  </div>
+                  <div class="buy-advertising__item"><span class="statistics-title statistics-title--mob">Рекламируемый канал</span>
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title statistics-title--mob">Приход</span>
+                    <div class="buy-advertising-wrapp"><span class="green-text">+2</span>
+                      <p><span class="text-normal">60 459</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">60 461</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title statistics-title--mob">Период подсчета</span>
+                    <div class="buy-advertising-wrapp">
+                      <p class="purple-text">0 часов 4 минут</p>
+                      <p><span class="text-normal">06.08.2019 13:55:22</span><span class="purple-text ico-text">&rarr;</span><span class="text-normal">06.08.2019 13:55:22</span></p>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title statistics-title--mob">Постов продвигается</span>
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
+                  </div>
+                </div>
+                <div class="buy-advertising">
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
+                  </div>
+                  <div class="buy-advertising__item">
+                    <div class="buy-advertising-wrapp canal__item_wrapp">
+                      <div class="canal__item canal__item_logo"><span>
+                          <svg class="svg-ico">
+                            <use xlink:href="#photo-logo"></use>
+                          </svg></span></div>
+                      <div class="canal__item canal__item_name">
+                        <p>Название канала</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w16">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w22">
+                    <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
+                  </div>
+                  <div class="buy-advertising__item buy-advertising__item--w15">
+                    <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
               </div>
