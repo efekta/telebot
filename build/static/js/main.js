@@ -53,6 +53,9 @@ $(document).ready(function () {
         .siblings().removeClass('current');
     })
 
+    if($('.select2').length) {
+      $('.select2').select2();
+    }
 
 });
 

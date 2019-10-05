@@ -2,14 +2,14 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Смена пароля</title><!--[if IE]>
+    <title>Каналы поиск</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="static/css/styles.min.css"><!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
   </head>
-  <body class="password_change_page">
+  <body class="channels-search-page">
     <svg style="display: none;">
       <symbol id="home" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.621797 9.52812H2.08794V15.3737C2.08843 15.5396 2.15478 15.6987 2.27251 15.816C2.39023 15.9333 2.54976 15.9995 2.71625 16H7.01017C7.17666 15.9995 7.33618 15.9333 7.45391 15.816C7.57163 15.6987 7.63799 15.5396 7.63848 15.3737V11.0939H10.2565V15.3737C10.257 15.5396 10.3233 15.6987 10.441 15.816C10.5588 15.9333 10.7183 15.9995 10.8848 16H14.9692C15.1357 15.9995 15.2952 15.9333 15.4129 15.816C15.5306 15.6987 15.597 15.5396 15.5975 15.3737V9.52812H17.3779C17.5015 9.52764 17.6221 9.49071 17.7247 9.42197C17.8272 9.35323 17.907 9.25576 17.9541 9.14187C18.0011 9.02797 18.0132 8.90274 17.989 8.78198C17.9647 8.66121 17.9051 8.55031 17.8177 8.46327L9.62763 0.185556C9.51184 0.0688224 9.35457 0.0022783 9.18989 0.000348351C9.02521 -0.00158159 8.86641 0.0612583 8.7479 0.175246L0.19267 8.45296C0.101802 8.53993 0.0392384 8.65211 0.0130873 8.77495C-0.0130638 8.89779 -0.00159659 9.02562 0.0460027 9.14189C0.0915368 9.25675 0.170942 9.35515 0.27374 9.42411C0.376538 9.49306 0.497895 9.52933 0.621797 9.52812Z"></path>
@@ -148,24 +148,204 @@
       </symbol>
     </svg>
     <div class="wrapper">
-      <div class="password_change"><a class="navbar__logo" href="index.html">Telebot.org</a>
-        <form>
-          <div class="user-cab__body">
-            <div class="user-cab__input-wrap">
-              <label for="pass_reg">Пароль</label>
-              <input id="pas_regs" type="text" placeholder="Введите пароль">
+      <header class="header">
+        <div class="container">
+          <div class="head-wrap">
+            <div class="head-wrap__search">
+              <input type="search" placeholder="Введите ссылку/username"><span class="search-ico">
+                <svg class="svg-ico svg-ico_search">
+                  <use xlink:href="#search"></use>
+                </svg></span>
             </div>
-            <div class="user-cab__input-wrap">
-              <label for="pass_two">Пароль повторно</label>
-              <input id="pass_two" type="text" placeholder="Введите пароль еще раз">
+            <div class="head-wrap__user">
+              <div class="user__balans"><span class="user__balans_desc">Баланс</span><span class="user__balans_sum">61 544 &#8381;</span></div>
+              <div class="user__cab">
+                <div class="wrap-user-photo" style="background-image: url(static/images/content/user.jpg);"><img src="static/images/content/user.jpg" alt="Фото пользователя"></div>
+              </div>
+              <div class="box-drop-down">
+                <svg class="svg-ico svg-ico_down">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form-wrap__user-cab user-autorize">
+              <div class="user-autorize__list-wrapp">
+                <ul>
+                  <li><a href="">
+                      <svg class="svg-ico">
+                        <use xlink:href="#user_small"></use>
+                      </svg><span>Профиль</span></a></li>
+                  <li><a href="">
+                      <svg class="svg-ico">
+                        <use xlink:href="#pod"></use>
+                      </svg><span>Поддержка</span></a></li>
+                  <li><a href="">
+                      <svg class="svg-ico">
+                        <use xlink:href="#exit"></use>
+                      </svg><span>Выход</span></a></li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="user-cab__footer">
-            <div class="wrap-btn">
-              <button class="btn user-cab__link user-cab__link-enter" type="submit">Изменить</button>
+        </div>
+      </header>
+      <div class="navbar navbar-menu"><a class="navbar__logo" href="index.html">Telebot.org</a>
+        <ul class="navbar-menu__list">
+          <li class="navbar-menu__item active"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#home"></use>
+              </svg><span>Главная</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#canals"></use>
+              </svg><span>Каналы</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#posts"></use>
+              </svg><span>Посты</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#roboto"></use>
+              </svg><span>Боты</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#binocl"></use>
+              </svg><span>Отслеживание</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#trophy"></use>
+              </svg><span>Розыгрыши</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#line-chart"></use>
+              </svg><span>Аудитория</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#alpha"></use>
+              </svg><span>Telegraph</span></a></li>
+          <li class="navbar-menu__item"><a class="navbar-menu__link" href="">
+              <svg class="svg-ico">
+                <use xlink:href="#insta"></use>
+              </svg><span>Spy Stories</span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="channels-search">
+          <div class="search-filter">
+            <h2 class="box-content__head">Поиск по каналам</h2>
+            <div class="box-content__body">
+              <form action="#">
+                <div class="flex">
+                  <div class="input-item">
+                    <div class="input-item__title">Ссылки</div>
+                    <div class="input-item__body"><span class="input-item__icon">
+                        <svg class="svg-ico">
+                          <use xlink:href="#link"></use>
+                        </svg></span>
+                      <input type="text" placeholder="Введите ссылку">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Канал</div>
+                    <div class="input-item__body"><span class="input-item__icon">А</span>
+                      <input type="text" placeholder="Название">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Описание</div>
+                    <div class="input-item__body"><span class="input-item__icon">
+                        <svg class="svg-ico">
+                          <use xlink:href="#descr"></use>
+                        </svg></span>
+                      <input type="text" placeholder="Описание">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Категории</div>
+                    <div class="input-item__body"><span class="input-item__icon">
+                        <svg class="svg-ico">
+                          <use xlink:href="#folder"></use>
+                        </svg></span>
+                      <select class="select2 schedule__filter" multiple="multiple" data-placeholder="Можно несколько">
+                        <option>Категория</option>
+                        <option>Категория2</option>
+                        <option>2qwqwqq</option>
+                        <option>3ghghghgg</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex--triple">
+                  <div class="input-item">
+                    <div class="input-item__title">Подписчиков</div>
+                    <div class="input-item__body"><span class="input-item__icon">От</span>
+                      <input type="text" placeholder="1 000"><span class="input-item__icon">До</span>
+                      <input type="text" placeholder="10 000">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Просмотров на пост</div>
+                    <div class="input-item__body"><span class="input-item__icon">От</span>
+                      <input type="text" placeholder="1 000"><span class="input-item__icon">До</span>
+                      <input type="text" placeholder="10 000">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">ER</div>
+                    <div class="input-item__body"><span class="input-item__icon">От</span>
+                      <input type="text" placeholder="1 000"><span class="input-item__icon">До</span>
+                      <input type="text" placeholder="10 000">
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex--triple">
+                  <div class="input-item">
+                    <div class="input-item__title">Цена за пост</div>
+                    <div class="input-item__body"><span class="input-item__icon">От</span>
+                      <input type="text" placeholder="1 000"><span class="input-item__icon">До</span>
+                      <input type="text" placeholder="10 000">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Упоминаний за неделю</div>
+                    <div class="input-item__body"><span class="input-item__icon">От</span>
+                      <input type="text" placeholder="1 000"><span class="input-item__icon">До</span>
+                      <input type="text" placeholder="10 000">
+                    </div>
+                  </div>
+                  <div class="input-item">
+                    <div class="input-item__title">Тип канала</div>
+                    <div class="input-item__body"><span class="input-item__icon">
+                        <svg class="svg-ico">
+                          <use xlink:href="#list"></use>
+                        </svg></span>
+                      <select class="select2 schedule__filter" data-placeholder="Не важно">
+                        <option>Категория</option>
+                        <option>Категория2</option>
+                        <option>2qwqwqq</option>
+                        <option>3ghghghgg</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </form>
+          <div class="search-result">
+            <h2 class="subtitle">Найдено 534509 каналов</h2>
+            <div class="sort__item">
+              <div class="sort__title">Название</div>
+              <div class="sort__arrows">
+                <svg class="svg-ico">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+                <svg class="svg-ico">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="static/js/jquery-3.3.1.min.js"></script>

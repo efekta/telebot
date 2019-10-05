@@ -1,0 +1,93 @@
+.channels-search
+    .search-filter
+        h2.box-content__head Поиск по каналам
+        .box-content__body
+            form(action="#")
+                .flex
+                    .input-item
+                        .input-item__title Ссылки
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#link")
+                            input(type="text" placeholder="Введите ссылку")
+                    .input-item
+                        .input-item__title Канал
+                        .input-item__body
+                            span.input-item__icon А
+                            input(type="text" placeholder="Название")
+                    .input-item
+                        .input-item__title Описание
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#descr")
+                            input(type="text" placeholder="Описание")
+                    .input-item
+                        .input-item__title Категории
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#folder")
+                            select.select2.schedule__filter(multiple="multiple" data-placeholder="Можно несколько")
+                                option Категория
+                                option Категория2
+                                option 2qwqwqq
+                                option 3ghghghgg
+                .flex.flex--triple
+                    .input-item
+                        .input-item__title Подписчиков
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item
+                        .input-item__title Просмотров на пост
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item
+                        .input-item__title ER
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                .flex.flex--triple
+                    .input-item
+                        .input-item__title Цена за пост
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item
+                        .input-item__title Упоминаний за неделю
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item
+                        .input-item__title Тип канала
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#list")
+                            select.select2.schedule__filter(data-placeholder="Не важно")
+                                option Категория
+                                option Категория2
+                                option 2qwqwqq
+                                option 3ghghghgg
+    .search-result
+        h2.subtitle Найдено 534509 каналов
+        .sort__item
+            .sort__title Название
+            .sort__arrows
+                svg.svg-ico
+                    use(xlink:href="#arrow")
+                svg.svg-ico
+                    use(xlink:href="#arrow")
