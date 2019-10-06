@@ -68,6 +68,9 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
+	svg {
+		fill: #FF6161;
+	}
 }
 .warning-wrapp__link {
 	font-size: 16px;

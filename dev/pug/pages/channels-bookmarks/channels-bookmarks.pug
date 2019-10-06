@@ -1,0 +1,37 @@
+.channels-bookmarks
+    .search-filter
+        h2.box-content__head.box-content__head--arrow.box-content__head--arrow-grey Поиск по каналам
+        .box-content__body
+            form(action="#")
+                .flex
+                    .input-item
+                        .input-item__title Ссылки
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#link")
+                            input(type="text" placeholder="Введите ссылку")
+                    .input-item
+                        .input-item__title Канал
+                        .input-item__body
+                            span.input-item__icon А
+                            input(type="text" placeholder="Название")
+                    .input-item
+                        .input-item__title Описание
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#descr")
+                            input(type="text" placeholder="Описание")
+                    .input-item.search-filter__button-wrap
+                        .search-filter__button
+                            input(type="button" value="Найти").button
+
+    .search-result
+        .search-result__body 
+            .search-item__error 
+                span.input-item__icon.search-item__error-icon
+                    svg.svg-ico
+                        use(xlink:href="#warning")
+                | Ничего не найдено
+
