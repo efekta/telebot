@@ -91,23 +91,112 @@
 .search-filter {
     padding-bottom: 60px;
 }
+.svg-ico--amount {
+    width: 26px;
+    height: 26px;
+}
+.search {
+    &-item {
+        padding: 30px 48px 30px 30px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 34px;
+        margin-bottom: 40px;
+        &__group {
+            .svg-ico--heart {
+                display: block;
+                margin: 14px auto 0;
+            }
+        }
+        &__amount {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            color: #809EFF;
+            margin-bottom: 10px;
+        }
+        &__icons {
+            margin: 13px 0 25px;
+            .svg-ico {
+                margin-right: 20px;
+            }
+        }
+        &__label {
+            min-width: 70px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+            color: #B3B3B3;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 500;
+        }
+        &__value {
+            color: #809EFF;
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: bold;
+            &--green {
+                color:  #55FF70;
+            }
+        }
+    }
+}
 .subtitle {
     font-size: 36px;
     line-height: 44px;
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 40px;
 }
+.title-item {
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+}
+.label {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 10px;
+    border-radius: 13px;
+    color:  #809EFF;
+    background: rgba(0, 0, 0, 0.05);
+    &:hover {
+        color: #fff;
+        background: #809EFF;
+    }
+    &-colored {
+        color: #fff;
+        background: #809EFF;
+        &:hover {
+            color:  #809EFF;
+            background: rgba(0, 0, 0, 0.05);
+        }
+        
+    }
+}
 //sort
 .sort {
     &__item {
-
+        margin-right: 40px;
+        &:last-child {
+            margin-right: 0;
+        }
+        .flex {
+            justify-content: flex-start;
+            .sort__arrows {
+                margin-right: 20px;
+            }
+        }
     }
     &__title {
         font-size: 16px;
         line-height: 19px;
         letter-spacing: 0.05em;
-        font-weight: 500;
+        font-weight: 600;
         margin-bottom: 25px;
+        .svg-ico {
+            margin-right: 9px;
+        }
     }
     &__arrows {
         display: flex;
@@ -122,6 +211,21 @@
         .svg-ico:nth-child(2) {
             transform: rotate(180deg);
         }
+        svg {
+            fill: #809EFF;
+        }
+    }
+
+}
+.search-result{
+    &__head {
+        padding-bottom: 40px;
+    }
+    &__item {
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 34px;
     }
 }
 //select
@@ -205,5 +309,62 @@
         border-top: none;
         transform: rotate(-135deg);
         top: 74%;
+    }
+}
+//pagination 
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 80px;
+    &__numbers {
+        display: flex;
+        li {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                a {
+                    background: #809EFF;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+    a {
+        display: block;
+        min-width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        padding: 17px;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
+        &:hover {
+            background: #809EFF;
+            color: #fff;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+    &__arrow {
+        svg {
+            fill: #B3B3B3;
+        }
+        &--prev {
+            margin-right: 40px;
+            svg {
+                transform: rotate(90deg);
+            }
+        }
+        &--next {
+            margin-left: 40px;
+            svg {
+                transform: rotate(-90deg);
+            }
+        }
     }
 }

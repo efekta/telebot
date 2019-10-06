@@ -84,10 +84,163 @@
                                 option 3ghghghgg
     .search-result
         h2.subtitle Найдено 534509 каналов
-        .sort__item
-            .sort__title Название
-            .sort__arrows
+        .flex.search-result__head
+            .sort__item
+                .sort__title Название
+                .sort__arrows
+                    svg.svg-ico
+                        use(xlink:href="#arrow")
+                    svg.svg-ico
+                        use(xlink:href="#arrow")
+            .flex
+                .sort__item
+                    .sort__title Подписчики
+                    .sort__arrows
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+                .sort__item
+                    .sort__title Прирост день/неделя
+                    .flex
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                .sort__item
+                    .sort__title За пост
+                    .sort__arrows
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+                .sort__item
+                    .sort__title 
+                        svg.svg-ico
+                            use(xlink:href="#eye-bold")
+                        | на пост/вчера
+                    .flex
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                .sort__item
+                    .sort__title 
+                        svg.svg-ico
+                            use(xlink:href="#load")
+                        | сегодня/неделя
+                    .flex
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                        .sort__arrows
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+                            svg.svg-ico
+                                use(xlink:href="#arrow")
+        .search-result__body 
+            .search-item.flex
+                .search-item__group
+                    span.channel-wrapp-pic
+                        svg.svg-ico.svg-ico--favorite
+                            use(xlink:href='#photo-logo')
+                    svg.svg-ico.svg-ico--heart
+                        use(xlink:href='#heart')
+                .search-item__group
+                    .title-item Название канала
+                    .search-item__icons
+                        svg.svg-ico
+                            use(xlink:href="#megaphone")
+                        svg.svg-ico
+                            use(xlink:href="#search")
+                        svg.svg-ico
+                            use(xlink:href="#pin")
+                        svg.svg-ico
+                            use(xlink:href="#analysis")
+                        svg.svg-ico
+                            use(xlink:href="#info")
+                    .search-item__labels
+                        .label.label-colored Даркнет ×
+                        .label + Категория
+                .search-item__group        
+                    .search-item__amount 322 545 
+                    svg.svg-ico.svg-ico--amount
+                        use(xlink:href="#small_line-chart")
+                .search-item__group
+                    .flex 
+                        .search-item__label Сегодня 
+                        .search-item__value.search-item__value--green +314
+                    .flex
+                        .search-item__label Неделя
+                        .search-item__value.search-item__value--green +5673
+                .search-item__group
+                    .flex 
+                        .search-item__label Сегодня 
+                        .search-item__value +314
+                    .flex
+                        .search-item__label Вчера
+                        .search-item__value +5673                        
+                    .flex
+                        .search-item__label В день
+                        .search-item__value +5673 
+                    svg.svg-ico.svg-ico--amount
+                        use(xlink:href="#small_line-chart")    
+                .search-item__group
+                    .flex 
+                        .search-item__label Сегодня 
+                        .search-item__value 0
+                    .flex
+                        .search-item__label Вчера
+                        .search-item__value 0                        
+                    .flex
+                        .search-item__label В день
+                        .search-item__value 0
+                    .flex
+                        .search-item__label Всего
+                        .search-item__value 45
+                .search-item__group
+                    .search-item__value 6%
+        .pagination
+            a(href="#").pagination__arrow.pagination__arrow--prev
                 svg.svg-ico
                     use(xlink:href="#arrow")
+            ul.pagination__numbers
+                li.active
+                    a(href="#") 1
+                li
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li
+                    a(href="#") 4
+                li
+                    a(href="#") 5
+                li
+                    a(href="#") 6
+                li
+                    a(href="#") 7
+                li
+                    a(href="#") 8
+                li
+                    a(href="#") 9
+                li
+                    a(href="#") ...
+                li
+                    a(href="#") 9999
+            a(href="#").pagination__arrow.pagination__arrow--next
                 svg.svg-ico
                     use(xlink:href="#arrow")
