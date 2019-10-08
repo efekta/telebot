@@ -76,11 +76,9 @@ $(document).ready(function () {
 
 
     $('.price-info').on('click', function(e) {
-      if ($('.price-info').hasClass('active')) {
-        $('.price-info').removeClass('active');
-      }
       $this = this;
       if ($('.price-info').has(e.target).length === 0) {
+        $('.price-info').removeClass('active');
         $(this).toggleClass('active');
       } 
     });
