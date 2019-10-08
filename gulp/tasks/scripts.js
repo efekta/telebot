@@ -10,7 +10,8 @@ module.exports = function () {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
             'dev/libs/fontawesome/svg-with-js/js/fontawesome-all.js',
-            'dev/libs/select2/select2.full.js'
+            'dev/libs/select2/select2.full.js',
+            'dev/libs/jquery-ui/jquery-ui.js'
             // 'dev/libs/liteChart/liteChart.js'
             ])
             .pipe(concat('libs.min.js'))
@@ -21,7 +22,8 @@ module.exports = function () {
         return $.gulp.src([
             'node_modules/svg4everybody/dist/svg4everybody.min.js',
             'dev/libs/fontawesome/svg-with-js/js/fontawesome-all.js',
-            'dev/libs/select2/select2.full.js'            
+            'dev/libs/select2/select2.full.js',
+            'dev/libs/jquery-ui/jquery-ui.js'
             // 'dev/libs/liteChart/liteChart.js'
             ])
             .pipe(concat('libs.min.js'))

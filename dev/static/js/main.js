@@ -56,6 +56,39 @@ $(document).ready(function () {
     if($('.select2').length) {
       $('.select2').select2();
     }
+    //
+    var handle = $( "#custom-handle" );
+    $( ".price-slider" ).slider({
+      orientation: "horizontal",
+      range: "min",
+      min: 500,
+      max: 500000,
+      value: 250000,
+      create: function() {
+        handle.text( $( this ).slider( "value" ) );
+      },
+      slide: function( event, ui ) {
+        handle.text( ui.value );
+        $this = this;
+        $($(this).parent().next().find(".amount")).val(ui.value);
+      }
+    });
+
+
+    $('.price-info').on('click', function(e) {
+      if ($('.price-info').hasClass('active')) {
+        $('.price-info').removeClass('active');
+      }
+      $this = this;
+      if ($('.price-info').has(e.target).length === 0) {
+        $(this).toggleClass('active');
+      } 
+    });
+
+    $('.price-info .close-ico').on('click', function() {
+      $this = this;
+      $(this).parent().parent().parent().removeClass('active');
+    });
 
 });
 
