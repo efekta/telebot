@@ -87,7 +87,7 @@ $(document).ready(function () {
       $this = this;
       $(this).parent().parent().parent().removeClass('active');
     });
-
+    $( ".datepicker" ).datepicker();
 });
 
 

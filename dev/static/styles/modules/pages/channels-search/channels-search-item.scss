@@ -44,6 +44,7 @@
     }
     &__body {
         display: flex;
+        align-items: center;
         border: 1px solid #CCCCCC;
         border-radius: 34px;
         overflow: hidden;
@@ -182,6 +183,7 @@
     border-radius: 13px;
     color:  #809EFF;
     background: rgba(0, 0, 0, 0.05);
+    margin-bottom: 2px;
     &:hover {
         color: #fff;
         background: #809EFF;

@@ -1,6 +1,3 @@
-.channels-bookmarks {
-    
-}
 .search-item__error {
     display: flex;
     align-items: center;
@@ -26,26 +23,29 @@
 }
 //range input
 #price-slider .ui-slider-range { background: #A3B8FF; }
-.ui-state-default, .ui-widget-content .ui-state-default {
-    background: #A3B8FF;
-    border-radius: 50%;
-    width: 12px;
-    height: 12px;
-    border-color: transparent;
-    outline: none;
+.selection {
+    .ui-state-default, .ui-widget-content .ui-state-default {
+        background: #A3B8FF;
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+        border-color: transparent;
+        outline: none;
 
+    }
+    .ui-slider-horizontal {
+        height: 4px;
+    }
+    .ui-widget.ui-widget-content {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 16px;
+    }
+    .ui-slider .ui-slider-range {
+        background: #A3B8FF;
+        border-radius: 16px;
+    }
 }
-.ui-slider-horizontal {
-    height: 4px;
-}
-.ui-widget.ui-widget-content {
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 16px;
-}
-.ui-slider .ui-slider-range {
-    background: #A3B8FF;
-    border-radius: 16px;
-}
+
 .price-slider .ui-slider-handle { border-color: #729fcf; }
 .price-info {
     cursor: pointer;

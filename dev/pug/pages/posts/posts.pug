@@ -1,0 +1,235 @@
+.posts
+    .search-filter
+        h2.box-content__head.box-content__head--arrow Поиск по рекламным постам
+        .box-content__body
+            form(action="#")
+                .flex
+                    .input-item
+                        .input-item__title За период
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#date")
+                            input(type="text" class="datepicker" placeholder="Выберите период")
+                    .input-item
+                        .input-item__title В тексте
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#descr")
+                            input(type="text" placeholder="Слово или фраза")
+                    .input-item
+                        .input-item__title Тип поиска по тексту
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#list")
+                            select.select2.schedule__filter(multiple="multiple" data-placeholder="По всему поиску")
+                                option По всему поиску
+                                option По всему поиску2
+                                option По всему поиску3
+                                option По всему поиску4
+                    .input-item
+                        .input-item__title На канале
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#descr")
+                            input(type="text" placeholder="Канал для поиска")
+
+                .flex.flex--triple
+                    .input-item
+                        .input-item__title Упоминаемый канал
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico.svg-ico_megaphone
+                                    use(xlink:href="#megaphone")
+                            input(type="text" placeholder="Название")
+                    .input-item
+                        .input-item__title Упоминаний в посте
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item
+                        .input-item__title Просмотров
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                .flex
+                    .input-item.input-item--posts
+                        .input-item__title Сортировка
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#list")
+                            select.select2.schedule__filter(data-placeholder="Дата добавления")
+                                option Дата добавления
+                                option сортировка2
+                                option сортировка3
+                                option сортировка4
+                    .input-item.search-filter__button-wrap
+                        .search-filter__button
+                            input(type="button" value="Найти").button
+    .search-result
+        h2.subtitle Найдено 534509 постов
+        .search-result__body.flex 
+            .search-item
+                .search-item__head.flex
+                    .search-item__group
+                        span.channel-wrapp-pic
+                            svg.svg-ico.svg-ico--favorite
+                                use(xlink:href='#photo-logo')
+                        svg.svg-ico.svg-ico--heart
+                            use(xlink:href='#heart')
+                    .search-item__group
+                        .title-item Название канала
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#user_small")
+                            span.posts__value 231 231
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 231 231    
+                            span.svg-ico ER
+                            span.posts__value 213 213
+                            
+                        .search-item__labels
+                            .label.label-colored Публикации
+                            .label.label-colored Упоминания
+                            .label Аналитика
+                    .search-item__group.posts--right
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 314
+                        .search-item__icons
+                            svg.svg-ico.svg-ico_megaphone
+                                use(xlink:href="#megaphone")
+                            span.posts__value 314
+                        .posts__date 06.08.2019 18:06:38
+                .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .search-item__img
+                    img(src="static/images/content/sample-img.jpg", alt="post-img")
+                a(href="#").search-item__link 
+                    .search-item__link-logo
+                        svg.svg-ico
+                            use(xlink:href="#link")
+                    .search-item__link-text Название ссылки
+            .search-item
+                .search-item__head.flex
+                    .search-item__group
+                        span.channel-wrapp-pic
+                            svg.svg-ico.svg-ico--favorite
+                                use(xlink:href='#photo-logo')
+                        svg.svg-ico.svg-ico--heart
+                            use(xlink:href='#heart')
+                    .search-item__group
+                        .title-item Название канала
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#user_small")
+                            span.posts__value 231 231
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 231 231    
+                            span.svg-ico ER
+                            span.posts__value 213 213
+                            
+                        .search-item__labels
+                            .label.label-colored Публикации
+                            .label.label-colored Упоминания
+                            .label Аналитика
+                    .search-item__group.posts--right
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 314
+                        .search-item__icons
+                            svg.svg-ico.svg-ico_megaphone
+                                use(xlink:href="#megaphone")
+                            span.posts__value 314
+                        .posts__date 06.08.2019 18:06:38
+                .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .search-item__img
+                    img(src="static/images/content/sample-img.jpg", alt="post-img")
+                a(href="#").search-item__link 
+                    .search-item__link-logo
+                        svg.svg-ico
+                            use(xlink:href="#link")
+                    .search-item__link-text Название ссылки
+            .search-item
+                .search-item__head.flex
+                    .search-item__group
+                        span.channel-wrapp-pic
+                            svg.svg-ico.svg-ico--favorite
+                                use(xlink:href='#photo-logo')
+                        svg.svg-ico.svg-ico--heart
+                            use(xlink:href='#heart')
+                    .search-item__group
+                        .title-item Название канала
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#user_small")
+                            span.posts__value 231 231
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 231 231    
+                            span.svg-ico ER
+                            span.posts__value 213 213
+                            
+                        .search-item__labels
+                            .label.label-colored Публикации
+                            .label.label-colored Упоминания
+                            .label Аналитика
+                    .search-item__group.posts--right
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 314
+                        .search-item__icons
+                            svg.svg-ico.svg-ico_megaphone
+                                use(xlink:href="#megaphone")
+                            span.posts__value 314
+                        .posts__date 06.08.2019 18:06:38
+                .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .search-item__img
+                    img(src="static/images/content/sample-img.jpg", alt="post-img")
+                a(href="#").search-item__link 
+                    .search-item__link-logo
+                        svg.svg-ico
+                            use(xlink:href="#link")
+                    .search-item__link-text Название ссылки               
+        .pagination
+            a(href="#").pagination__arrow.pagination__arrow--prev
+                svg.svg-ico
+                    use(xlink:href="#arrow")
+            ul.pagination__numbers
+                li.active
+                    a(href="#") 1
+                li
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li
+                    a(href="#") 4
+                li
+                    a(href="#") 5
+                li
+                    a(href="#") 6
+                li
+                    a(href="#") 7
+                li
+                    a(href="#") 8
+                li
+                    a(href="#") 9
+                li
+                    a(href="#") ...
+                li
+                    a(href="#") 9999
+            a(href="#").pagination__arrow.pagination__arrow--next
+                svg.svg-ico
+                    use(xlink:href="#arrow")
