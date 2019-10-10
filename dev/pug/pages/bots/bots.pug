@@ -1,0 +1,107 @@
+.bots
+    .search-filter
+        h2.box-content__head.box-content__head--arrow Поиск по ботам
+        .box-content__body
+            form(action="#")
+                .flex
+                    .input-item
+                        .input-item__title Ссылки
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#link")
+                            input(type="text" placeholder="Введите ссылку")
+                    .input-item
+                        .input-item__title Название бота
+                        .input-item__body
+                            span.input-item__icon А
+                            input(type="text" placeholder="Название")
+                    .input-item
+                        .input-item__title Описание
+                        .input-item__body
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#descr")
+                            input(type="text" placeholder="Описание")
+                .flex.flex--triple
+                    .input-item
+                        .input-item__title Упоминаний в посте
+                        .input-item__body
+                            span.input-item__icon От
+                            input(type="text" placeholder="1 000")
+                            span.input-item__icon До
+                            input(type="text" placeholder="10 000")
+                    .input-item.search-filter__button-wrap
+                        .search-filter__button
+                            input(type="button" value="Найти").button
+    .search-result
+        h2.subtitle Найдено 534509 ботов
+        .flex.search-result__head
+            .sort__item
+                .sort__title Название
+                .sort__arrows
+                    svg.svg-ico
+                        use(xlink:href="#arrow")
+                    svg.svg-ico
+                        use(xlink:href="#arrow")
+            .flex
+                .sort__item
+                    .sort__title упоминаний
+                    .sort__arrows
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+                        svg.svg-ico
+                            use(xlink:href="#arrow")
+        .search-result__body 
+            .search-item.flex
+                .search-item__group
+                    span.channel-wrapp-pic
+                        svg.svg-ico.svg-ico--favorite
+                            use(xlink:href='#photo-logo')
+                    svg.svg-ico.svg-ico--heart
+                        use(xlink:href='#heart')
+                .search-item__group.search-item__group--name
+                    .title-item Название канала
+                    .search-item__icons Название бота 2
+                .search-item__group
+                    .flex 
+                        .search-item__label В постых
+                        .search-item__value 314
+                    .flex
+                        .search-item__label В описаниях
+                        .search-item__value 5673                        
+                    .flex
+                        .search-item__label Instagram ADS
+                        .search-item__value 5673
+                .search-item__group
+                    .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        .pagination
+            a(href="#").pagination__arrow.pagination__arrow--prev
+                svg.svg-ico
+                    use(xlink:href="#arrow")
+            ul.pagination__numbers
+                li.active
+                    a(href="#") 1
+                li
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li
+                    a(href="#") 4
+                li
+                    a(href="#") 5
+                li
+                    a(href="#") 6
+                li
+                    a(href="#") 7
+                li
+                    a(href="#") 8
+                li
+                    a(href="#") 9
+                li
+                    a(href="#") ...
+                li
+                    a(href="#") 9999
+            a(href="#").pagination__arrow.pagination__arrow--next
+                svg.svg-ico
+                    use(xlink:href="#arrow")
