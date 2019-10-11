@@ -23,3 +23,9 @@
 <p>
 	<a href="https://efekta.github.io/telebot/build/posts.html">Посты рекламные</a>
 </p>
+<p>
+	<a href="https://efekta.github.io/telebot/bots/bots.html">Боты</a>
+</p>
+<p>
+	<a href="https://efekta.github.io/telebot/tracking/tracking.html">Отслеживание</a>
+</p>

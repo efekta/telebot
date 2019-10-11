@@ -1,0 +1,127 @@
+.tracking {
+    &__box {
+        margin-bottom: 40px;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        .favorite-title {
+            width: 17%;
+            &:nth-child(1) {
+                flex-grow: 1;
+            }
+            &.tracking__group-min {
+                width: 10%;
+                min-width: 80px;
+            }
+        }
+    }
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &__group {
+        width: 17%;
+        .favorite-title {
+            display: none;
+        }
+        &:nth-child(1) {
+            flex-grow: 1;
+        }
+        &.tracking__group-min {
+            width: 10%;
+            min-width: 80px;
+        }
+        .statistic__date .search-item__amount {
+            padding-left: 10px;
+        }
+        &-thin .search-item__amount {
+            padding-right: 20px;
+            font-weight: 200;
+            word-wrap: break-word;
+        }
+    }
+    &__icons {
+        display: flex;
+        .input-item__icon {
+            display: flex;
+            margin-right: 10px;
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(126, 157, 255, 0.3);
+            border-radius: 10px;
+            &--red {
+                box-shadow: 0px 2px 6px rgba(255, 97, 97, 0.3);
+                svg {
+                    fill: #FF6161;
+                }
+            }
+        }
+    }
+    &__add {
+        display: none;
+        position: absolute;
+        top: 72px;
+        right: 0;
+        width: 500px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        backdrop-filter: blur(15px);
+        border-radius: 20px;
+        z-index: 1;
+
+        .price-info__title {
+            color: #333333;
+        }
+        &-choice {
+            color: #333333;
+            font-size: 16px;
+            line-height: 19px;
+            .tabs__caption {
+                display: flex;
+                background: rgba(0, 0, 0, 0.05);
+                border-radius: 22px;
+                margin-bottom: 20px;
+                li {
+                    padding: 12px 20px;
+                    flex-grow: 1;
+                    &.active {
+                        color: #fff;
+                        background: #A3B8FF;
+                        border-radius: 22px;
+                    }
+                }
+            }
+            input {
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, 0.05);
+                box-sizing: border-box;
+                border-radius: 22px;
+                padding: 13px 20px;
+            }
+        }
+    }
+    .button {
+        display: block;
+        color: #fff;
+        margin-top: 30px;
+    }   
+                    
+}
+.button-add {
+    &.active .tracking__add {
+        display: block;
+    }
+}
+.tabs {
+    &__content  {
+        display: none;
+        &.active {
+            display: block;
+        }
+    }
+}

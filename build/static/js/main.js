@@ -44,14 +44,27 @@ $(document).ready(function () {
       }
     });
 
+    (function($) {
+      $(function() {
+       
+        $('.tabs__caption').on('click', 'li:not(.active)', function() {
+          $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.tabs').find('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+       
+      });
+      })(jQuery);
+
+
     $('ul.tabs li').click(function(){
       var tab_id = $(this).attr('data-tab');
-
       $(this).addClass('current')
         .siblings().removeClass('current');
       $("#"+tab_id).addClass('current')
         .siblings().removeClass('current');
     })
+
 
     if($('.select2').length) {
       $('.select2').select2();
@@ -87,6 +100,20 @@ $(document).ready(function () {
       $this = this;
       $(this).parent().parent().parent().removeClass('active');
     });
+
+    $('.button-add').on('click', function(e) {
+      $this = this;
+      if ($('.tracking__add').has(e.target).length === 0) {
+        $('.tracking__add').removeClass('active');
+        $(this).toggleClass('active');
+      } 
+    });
+
+    $('.tracking__add .close-ico').on('click', function() {
+      $this = this;
+      $(this).parent().parent().parent().removeClass('active');
+    });   
+
     $( ".datepicker" ).datepicker();
 });
 

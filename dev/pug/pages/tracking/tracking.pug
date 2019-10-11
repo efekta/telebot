@@ -1,0 +1,120 @@
+.tracking
+    .tracking__box
+        h2.box-content__head Управление отслеживаниями
+            .button-add +
+                .tracking__add
+                    .price-info__title
+                        span.subtitle-item Добавить отслеживание
+                        span.close-ico
+                            svg.svg-ico.svg-ico_close
+                                use(xlink:href="#close")
+                    .tabs.tracking__add-choice
+                        ul.tabs__caption
+                            li.active Упоминание канала
+                            li Слово или фраза
+                        .tabs__content.active 
+                            form(action="")
+                                input(type="text" placeholder="Введите слово или фразу") 
+                                button.button Найти
+                        .tabs__content
+                            form(action="")
+                                input(type="text" placeholder="Введите канал") 
+                                button.button Найти
+        .box-content__body
+            .tracking-items
+                .tracking__header
+                    .favorite-title Фраза или канал
+                    .favorite-title.tracking__group-min Тип
+                    .favorite-title Последняя проверка
+                    .favorite-title.tracking__group-min Действия
+                    .favorite-title Дата добавления
+                .tracking-item
+                    .tracking__group
+                        .favorite-title Фраза или канал
+                        .search-item__amount Название
+                    .tracking__group.tracking__group-min
+                        .favorite-title Тип
+                        .statistic__date Канал
+                    .tracking__group
+                        .favorite-title Последняя проверка
+                        .statistic__date 06.08.2019 18:06:38
+                    .tracking__group.tracking__group-min
+                        .favorite-title Действия
+                        .tracking__icons
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#play")
+                            span.input-item__icon.input-item__icon--red
+                                svg.svg-ico
+                                    use(xlink:href="#close")
+                    .tracking__group
+                        .favorite-title Дата добавления
+                        .statistic__date 06.08.2019 18:06:38 
+                .tracking-item
+                    .tracking__group
+                        .favorite-title Фраза или канал
+                        .search-item__amount Название Название
+                    .tracking__group.tracking__group-min
+                        .favorite-title Тип
+                        .statistic__date Канал
+                    .tracking__group
+                        .favorite-title Последняя проверка
+                        .statistic__date 06.08.2019 18:06:38
+                    .tracking__group.tracking__group-min
+                        .favorite-title Действия
+                        .tracking__icons 
+                            span.input-item__icon
+                                svg.svg-ico
+                                    use(xlink:href="#play")
+                            span.input-item__icon.input-item__icon--red
+                                svg.svg-ico
+                                    use(xlink:href="#close")
+                    .tracking__group
+                        .favorite-title Дата добавления
+                        .statistic__date 06.08.2019 18:06:38                     
+    .tracking__box
+        h2.box-content__head Последние уведомления
+        .box-content__body
+            .tracking-items
+                .tracking__header
+                    .favorite-title Фраза или канал
+                    .favorite-title Ссылка
+                    .favorite-title Где
+                    .favorite-title Дата
+                    .favorite-title Обнаружено
+                .tracking-item
+                    .tracking__group
+                        .favorite-title Фраза или канал
+                        .statistic__date
+                            span Канал
+                            span.search-item__amount Название
+                    .tracking__group.tracking__group-thin
+                        .favorite-title Ссылка
+                        .search-item__amount www.example.com
+                    .tracking__group
+                        .favorite-title Где
+                        .search-item__amount Название
+                    .tracking__group
+                        .favorite-title Дата
+                        .statistic__date 06.08.2019 18:06:38
+                    .tracking__group
+                        .favorite-title Обнаружено
+                        .statistic__date 06.08.2019 18:06:38 
+                .tracking-item
+                    .tracking__group
+                        .favorite-title Фраза или канал
+                        .statistic__date
+                            span Канал
+                            span.search-item__amount Название
+                    .tracking__group.tracking__group-thin
+                        .favorite-title Ссылка
+                        .search-item__amount www.example.com
+                    .tracking__group
+                        .favorite-title Где
+                        .search-item__amount Название
+                    .tracking__group
+                        .favorite-title Дата
+                        .statistic__date 06.08.2019 18:06:38
+                    .tracking__group
+                        .favorite-title Обнаружено
+                        .statistic__date 06.08.2019 18:06:38 
