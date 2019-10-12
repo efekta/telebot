@@ -115,6 +115,7 @@
 .button-add {
     &.active .tracking__add {
         display: block;
+        cursor: auto;
     }
 }
 .tabs {

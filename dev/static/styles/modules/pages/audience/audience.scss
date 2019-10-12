@@ -1,0 +1,157 @@
+.audience {
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-item {
+            padding: 12px 20px;
+            border-radius: 23px;
+            border: 4px solid transparent;
+            font-weight: bold;
+            &.active {
+                background: #809EFF;
+                color: #fff;
+            }
+        }
+        &-ico {
+            padding: 0 20px;
+        }
+        input {
+            flex-grow: 1;
+        }
+    }
+    &__result {
+        max-width: 46%;
+        min-width: 362px;
+        margin: 10px auto;
+        display: flex;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 20px rgba(126, 157, 255, 0.2);
+        border-radius: 28px;
+        padding: 20px;
+        &-item {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: 600;
+            margin-right: 30px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+    }
+    &__history {
+        display: flex;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 7.5px;
+        }
+        &:last-child {
+            &:after {
+                content: none;
+            }
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .channel-wrapp-pic {
+            box-sizing: content-box;
+            border: 3px solid #fff;
+        }
+        &-name {
+            font-size: 16px;
+            line-height: 19px;
+            font-weight: bold;
+            flex-grow: 1;
+            p {
+                margin-bottom: 8px;
+            }
+        }
+        &-more {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 36px;
+            height: 36px;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 6px rgba(126, 157, 255, 0.3);
+            border-radius: 10px;
+            svg {
+                fill: #809EFF;
+                transform: rotate(-90deg);
+            }
+            &:hover {
+                background: #809EFF;
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    &__table {
+        border-collapse: collapse;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        width: 100%;
+        col {
+            border: 1px solid transparent;
+            border-radius: 20px;
+        }
+        th {
+            position: relative;
+            font-weight: bold;
+            text-align: left;
+            padding: 20px;
+        }
+        td {
+            position: relative;
+            font-weight: bold;
+            color: #809EFF;
+            padding: 20px;
+            span.audience__percent {
+                font-weight: normal;
+            }
+            &:first-child {
+                font-weight: 500;
+                color: #333333;
+            }
+        }
+
+    }
+    .table-hover {
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     background: #FFFFFF;
+            // background: red;
+            // box-shadow: inset 2px 0 20px rgba(0, 0, 0, 1);
+            // border-radius: 20px;
+        // }
+        
+    }
+    .channel-wrapp-pic--after{
+        position: relative;
+        left: -20px;
+    }
+}
+.box-content__item--check {
+    width: 40%;
+    &>div {
+        margin-bottom: 60px;
+    }
+    
+}

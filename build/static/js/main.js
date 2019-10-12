@@ -115,6 +115,16 @@ $(document).ready(function () {
     });   
 
     $( ".datepicker" ).datepicker();
+    
+    if ($('.audience__table').length) {
+      var $table = $('.audience__table');
+      var $cols = $table.find('col');
+
+      $table.on('mouseenter mouseleave', 'th,td', function() {
+          $cols.eq(this.cellIndex).toggleClass('table-hover');
+      });
+    }
+
 });
 
 
