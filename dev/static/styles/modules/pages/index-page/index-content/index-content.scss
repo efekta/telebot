@@ -1,12 +1,12 @@
 .box-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 40px;
-  flex-wrap: nowrap;
 }
 .box-content__item {
-  // width: 710px; 
   width: 49%; 
+  margin-bottom: 30px;
 }
 .box-content__head {
   position: relative;
@@ -14,10 +14,7 @@
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.02);
   border-radius: 34px 34px 0px 0px;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.05em;
-  color: rgba(0, 0, 0, 0.8);
+
   &--arrow {
     position: relative;
     &:after {
@@ -38,7 +35,12 @@
     }
   }
 }
-
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  color: rgba(0, 0, 0, 0.8);
+}
 .box-content__body {
   padding: 30px 40px;
   background: #FFFFFF;
