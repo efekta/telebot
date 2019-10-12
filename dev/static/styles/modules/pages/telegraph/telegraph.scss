@@ -1,0 +1,55 @@
+.telegraph {
+    .search-filter__button-wrap {
+        flex-grow: 2;
+    }
+    .flex.flex--triple {
+        .input-item{
+            margin-right: 40px;
+        }
+        
+    }
+    .flex.search-result__head {
+        justify-content: flex-start;
+        .sort__item {
+            min-width: 31%;
+            @media screen and (max-width: 926px) {
+                &+.flex {
+                    width: 53%;
+                }
+            }
+        }
+    }
+    .search-item__group--name {
+        min-width: 27%;
+        @media screen and (max-width: 926px) {
+            min-width: 82%;
+        }
+    }
+    .search-item__group--time {
+        min-width: 258px;
+        @media screen and (max-width: 1240px) {
+            min-width: auto;
+        }
+        .flex {
+            justify-content: flex-start;
+        }
+    }
+    .search-item__text {
+        padding-left: 60px;
+        padding-top: 0;
+        @media screen and (max-width: 928px) {
+            padding-left: 0;
+        }
+    }
+    .search-item__label {
+        white-space: nowrap;
+    }
+    .box-content__body .flex {
+        flex-wrap: wrap;
+    }
+    .flex {
+        @media screen and (max-width: 928px) {
+            flex-wrap: wrap;
+        }
+    }
+}
