@@ -15,7 +15,7 @@
 	<a href="https://efekta.github.io/telebot/build/channels-search.html">Каналы поиск</a>
 </p>
 <p>
-	<a href="https://efekta.github.io/telebot/build/channelы-bookmarks.html">Каналы в закладках</a>
+	<a href="https://efekta.github.io/telebot/build/channels-bookmarks.html">Каналы в закладках</a>
 </p>
 <p>
 	<a href="https://efekta.github.io/telebot/build/channels-my.html">Мои каналы</a>
@@ -24,8 +24,17 @@
 	<a href="https://efekta.github.io/telebot/build/posts.html">Посты рекламные</a>
 </p>
 <p>
-	<a href="https://efekta.github.io/telebot/bots/bots.html">Боты</a>
+	<a href="https://efekta.github.io/telebot/build/bots.html">Боты</a>
 </p>
 <p>
-	<a href="https://efekta.github.io/telebot/tracking/tracking.html">Отслеживание</a>
+	<a href="https://efekta.github.io/telebot/build/tracking.html">Отслеживание</a>
+</p>
+<p>
+    <a href="https://efekta.github.io/telebot/build/audience.html">Аудитория</a>
+</p>
+<p>
+    <a href="https://efekta.github.io/telebot/build/telegraph.html">Телеграф</a>
+</p>
+<p>
+    <a href="https://efekta.github.io/telebot/build/gifts.html">Розыгрыши</a>
 </p>

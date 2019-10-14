@@ -22,7 +22,23 @@
     pointer-events: none;
 }
 //range input
-#price-slider .ui-slider-range { background: #A3B8FF; }
+.price-info__range {
+    .ui-slider-range { 
+        background: #A3B8FF; 
+    }
+    .ui-widget.ui-widget-content {
+        height: 4px;
+        background: rgba(0, 0, 0, 0.05);
+        border: none;
+    }
+    .ui-slider-handle { 
+        border-color: #729fcf; 
+        outline: none;
+        width: 12px;
+        height: 12px;
+        background: #809EFF;
+    }
+}
 .selection {
     .ui-state-default, .ui-widget-content .ui-state-default {
         background: #A3B8FF;
@@ -46,7 +62,6 @@
     }
 }
 
-.price-slider .ui-slider-handle { border-color: #729fcf; }
 .price-info {
     cursor: pointer;
     &.active {
