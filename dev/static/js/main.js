@@ -56,6 +56,17 @@ $(document).ready(function () {
       });
       })(jQuery);
 
+    (function($) {
+      $(function() {
+       
+        $('.tabs__caption2').on('click', 'li:not(.active)', function() {
+          $(this)
+            .addClass('active').siblings().removeClass('active')
+            .closest('.tabs2').find('.tabs__content2').removeClass('active').eq($(this).index()).addClass('active');
+        });
+       
+      });
+      })(jQuery);
 
     $('ul.tabs li').click(function(){
       var tab_id = $(this).attr('data-tab');
@@ -70,22 +81,42 @@ $(document).ready(function () {
       $('.select2').select2();
     }
     //
-    var handle = $( "#custom-handle" );
-    $( ".price-slider" ).slider({
-      orientation: "horizontal",
-      range: "min",
-      min: 500,
-      max: 500000,
-      value: 250000,
-      create: function() {
-        handle.text( $( this ).slider( "value" ) );
-      },
-      slide: function( event, ui ) {
-        handle.text( ui.value );
-        $this = this;
-        $($(this).parent().next().find(".amount")).val(ui.value);
-      }
-    });
+    if($('.amount').length) {
+      var handle = $( "#custom-handle" );
+      $( ".price-slider" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        min: 500,
+        max: 500000,
+        value: 250000,
+        create: function() {
+          handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+          handle.text( ui.value );
+          $this = this;
+          $($(this).parent().next().find(".amount")).val(ui.value);
+        }
+      });
+    }
+    if($('.amount-gift').length) {
+      var handle = $( "#custom-handle" );
+      $( ".price-slider" ).slider({
+        orientation: "horizontal",
+        range: "min",
+        min: 0,
+        max: 90,
+        value: 7,
+        create: function() {
+          handle.text( $( this ).slider( "value" ) );
+        },
+        slide: function( event, ui ) {
+          handle.text( ui.value );
+          $this = this;
+          $($(this).parent().next().find(".amount-gift")).val(ui.value);
+        }
+      });
+    }    
 
 
     $('.price-info').on('click', function(e) {
@@ -113,9 +144,15 @@ $(document).ready(function () {
       $this = this;
       $(this).parent().parent().parent().removeClass('active');
     });   
-
+    $('.gifts__more').on('click', function() {
+      $this = this;
+      $(this).parent().parent().parent().parent().addClass('open').siblings().removeClass('open');
+    });
+    $('.gifts__about__close').on('click', function() {
+      $this = this;
+      $(this).parent().parent().parent().removeClass('open');
+    });    
     $( ".datepicker" ).datepicker();
-    
     // if ($('.audience__table').length) {
     //   var $table = $('.audience__table');
     //   var $cols = $table.find('col');

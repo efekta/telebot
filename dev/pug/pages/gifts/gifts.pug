@@ -1,0 +1,297 @@
+.gifts
+    .gifts-my
+        h2.box-content__head Мои розыгрыши
+            .button.button-add.button-add-gift Создать
+                .tracking__add
+                    .price-info__title
+                        span.subtitle-item Создать розыгрыш
+                        span.close-ico
+                            svg.svg-ico.svg-ico_close
+                                use(xlink:href="#close")
+                    form(action="")
+                        .gifts-add
+                            input(type="text" placeholder="Введите ссылку на канал/чат" class="gifts-link")
+                            .gifts-add__title Срок конкурса
+                            .price-info__group
+                                input(type="radio" name="price-info" id="price-info1")
+                                label(for="price-info1") Из диапазона (дни)
+                                .price-info__range
+                                    .price-slider
+                                        //- #custom-handle.ui-slider-handle
+                                .price-info__value
+                                    .price-info__label 0
+                                    input(type="text" class="amount-gift" readonly value="7")
+                                    .price-info__label 90
+                            .price-info__group
+                                input(type="radio" name="price-info" id="price-info2")
+                                label(for="price-info2") Свой срок
+                                div
+                                    .tabs.gifts__tabs
+                                        ul.tabs__caption
+                                            li.active Дней
+                                            li Недель
+                                            li Месяцев
+                                        .tabs__content.active 
+                                            input(type="text" placeholder="Количество" class="gifts__myamount")
+                                        .tabs__content
+                                            input(type="text" placeholder="Количество недель" class="gifts__myamount")
+                                        .tabs__content
+                                            input(type="text" placeholder="Количество месяцев" class="gifts__myamount")
+                            .gifts-add__title Призы за первые 5 мест
+                            .gifts-add__place-wrap
+                                input(type="text" placeholder="3 место" class="gifts-link gifts-add__place-input")
+                                .gifts-add__place-tick
+                            .gifts-add__places
+                                .gifts-add__place 1. Приз 
+                                    span.close-ico
+                                        svg.svg-ico.svg-ico_close
+                                            use(xlink:href="#close")
+                                .gifts-add__place 2. Приз
+                                    span.close-ico
+                                        svg.svg-ico.svg-ico_close
+                                            use(xlink:href="#close")
+                            .gifts-add__title Описание
+                            textarea(name="gift_description", rows="5")
+                            button.button Создать
+        .box-content__body
+            .gifts__item.open
+                .gifts__short
+                    .gifts__short-wrap
+                        .search-item__group
+                            span.channel-wrapp-pic
+                                svg.svg-ico.svg-ico--favorite
+                                    use(xlink:href='#photo-logo')
+                        .search-item__group.gifts__title
+                            .title-item Название канала
+                            .search-item__labels
+                                .label.label-colored 1. Приз
+                                .label.label-colored 2. Приз
+                                .label.label-colored 3. Приз
+                                .label.label-colored 4. Приз
+                                .label.label-colored 5. Приз
+                        .search-item__group.posts--right.gifts--right
+                            .search-item__icons 
+                                svg.svg-ico
+                                    use(xlink:href="#eye")
+                                span.posts__value 314
+                            .search-item__icons
+                                svg.svg-ico.svg-ico_megaphone
+                                    use(xlink:href="#megaphone")
+                                span.posts__value 314
+                            .posts__date До 06.08.2019
+                        .search-item__group
+                            .gifts__more
+                    .gifts__more-content
+                        .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        .search-item__img
+                            img(src="static/images/content/sample-img.jpg", alt="post-img")
+                        a(href="#").search-item__link 
+                            .search-item__link-logo
+                                svg.svg-ico
+                                    use(xlink:href="#link")
+                            .search-item__link-text Название ссылки
+                .gifts__right
+                    .tabs2.gifts__about
+                        span.close-ico.gifts__about__close
+                            svg.svg-ico.svg-ico_close
+                                use(xlink:href="#close")
+                        ul.tabs__caption2
+                            li.active Механика розыгрыша
+                            li Информация
+                        .tabs__content2.active 
+                            .tabs.tracking__add-choice
+                                ul.tabs__caption
+                                    li.active Среди подписчиков от конкретной даты
+                                    li Среди всех подписчиков
+                                .tabs__content.active 
+                                    form(action="")
+                                        .gifts__date.datepicker
+                                        button.button Выбрать победителя
+                                    .gifts-winner
+                                        p Победитель выбран
+                                        .gifts-winner__block
+                                            .gifts-winner__logo
+                                                span.channel-wrapp-pic
+                                                    svg.svg-ico.svg-ico--favorite
+                                                        use(xlink:href='#photo-logo')
+                                            .gifts-winner__name Имя Фамилия
+                                            a(href="#").gifts-winner__link @0000000
+                                        a(href="#").button Связаться
+                                .tabs__content
+                                    p content
+
+                        .tabs__content2.gifts__info
+                            .gifts__info-item
+                                .gifts-add__title Cрок конкурса
+                                .gifts__info-value 7 дней 
+                            .gifts__info-item
+                                .gifts-add__title Cрок конкурса
+                                .gifts__info-values
+                                    .gifts__info-value 1. Приз
+                                    .gifts__info-value 2. Приз
+                                    .gifts__info-value 3. Приз
+                                    .gifts__info-value 4. Приз
+                                    .gifts__info-value 5. Приз
+                            .gifts__info-item
+                                .gifts-add__title Описание
+                                .gifts__info-descr  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            .gifts__item
+                .gifts__short
+                    .gifts__short-wrap
+                        .search-item__group
+                            span.channel-wrapp-pic
+                                svg.svg-ico.svg-ico--favorite
+                                    use(xlink:href='#photo-logo')
+                        .search-item__group.gifts__title
+                            .title-item Название канала
+                            .search-item__labels
+                                    .label.label-colored 1. Приз
+                                    .label.label-colored 2. Приз
+                                    .label.label-colored 3. Приз
+                                    .label.label-colored 4. Приз
+                                    .label.label-colored 5. Приз
+                        .search-item__group.posts--right.gifts--right
+                            .search-item__icons 
+                                svg.svg-ico
+                                    use(xlink:href="#eye")
+                                span.posts__value 314
+                            .search-item__icons
+                                svg.svg-ico.svg-ico_megaphone
+                                    use(xlink:href="#megaphone")
+                                span.posts__value 314
+                            .posts__date До 06.08.2019
+                        .search-item__group
+                            .gifts__more
+                    .gifts__more-content
+                        .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        .search-item__img
+                            img(src="static/images/content/sample-img.jpg", alt="post-img")
+                        a(href="#").search-item__link 
+                            .search-item__link-logo
+                                svg.svg-ico
+                                    use(xlink:href="#link")
+                            .search-item__link-text Название ссылки
+                .gifts__right
+                    .tabs2.gifts__about
+                        span.close-ico.gifts__about__close
+                            svg.svg-ico.svg-ico_close
+                                use(xlink:href="#close")
+                        ul.tabs__caption2
+                            li.active Механика розыгрыша
+                            li Информация
+
+                        .tabs__content2.active 
+                            .tabs.tracking__add-choice
+                                ul.tabs__caption
+                                    li.active Среди подписчиков от конкретной даты
+                                    li Среди всех подписчиков
+                                .tabs__content.active 
+                                    form(action="")
+                                        .gifts__date.datepicker
+                                        button.button Выбрать победителя
+                                .tabs__content
+                                    p content
+                        .tabs__content2
+                            p content 2
+    .search-result
+        h2.subtitle Найдено 534509 розыгрышей
+        .search-result__body.flex 
+            .search-item
+                .search-item__head.flex
+                    .search-item__group
+                        span.channel-wrapp-pic
+                            svg.svg-ico.svg-ico--favorite
+                                use(xlink:href='#photo-logo')
+                        svg.svg-ico.svg-ico--heart
+                            use(xlink:href='#heart')
+                    .search-item__group
+                        .title-item Название канала
+                        .search-item__labels
+                            .label.label-colored 1. Приз
+                            .label.label-colored 2. Приз
+                            .label.label-colored 3. Приз
+                            .label.label-colored 4. Приз
+                            .label.label-colored 5. Приз
+                    .search-item__group.posts--right
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 314
+                        .search-item__icons
+                            svg.svg-ico.svg-ico_megaphone
+                                use(xlink:href="#megaphone")
+                            span.posts__value 314
+                        .posts__date До 06.08.2019
+                .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .search-item__img
+                    img(src="static/images/content/sample-img.jpg", alt="post-img")
+                a(href="#").search-item__link 
+                    .search-item__link-logo
+                        svg.svg-ico
+                            use(xlink:href="#link")
+                    .search-item__link-text Название ссылки
+            .search-item
+                .search-item__head.flex
+                    .search-item__group
+                        span.channel-wrapp-pic
+                            svg.svg-ico.svg-ico--favorite
+                                use(xlink:href='#photo-logo')
+                        svg.svg-ico.svg-ico--heart
+                            use(xlink:href='#heart')
+                    .search-item__group
+                        .title-item Название канала
+                        .search-item__labels
+                            .label.label-colored 1. Приз
+                            .label.label-colored 2. Приз
+                            .label.label-colored 3. Приз
+                            .label.label-colored 4. Приз
+                            .label.label-colored 5. Приз
+                    .search-item__group.posts--right
+                        .search-item__icons
+                            svg.svg-ico
+                                use(xlink:href="#eye")
+                            span.posts__value 314
+                        .search-item__icons
+                            svg.svg-ico.svg-ico_megaphone
+                                use(xlink:href="#megaphone")
+                            span.posts__value 314
+                        .posts__date До 06.08.2019
+                .search-item__text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                .search-item__img
+                    img(src="static/images/content/sample-img.jpg", alt="post-img")
+                a(href="#").search-item__link 
+                    .search-item__link-logo
+                        svg.svg-ico
+                            use(xlink:href="#link")
+                    .search-item__link-text Название ссылки
+          
+        .pagination
+            a(href="#").pagination__arrow.pagination__arrow--prev
+                svg.svg-ico
+                    use(xlink:href="#arrow")
+            ul.pagination__numbers
+                li.active
+                    a(href="#") 1
+                li
+                    a(href="#") 2
+                li
+                    a(href="#") 3
+                li
+                    a(href="#") 4
+                li
+                    a(href="#") 5
+                li
+                    a(href="#") 6
+                li
+                    a(href="#") 7
+                li
+                    a(href="#") 8
+                li
+                    a(href="#") 9
+                li
+                    a(href="#") ...
+                li
+                    a(href="#") 9999
+            a(href="#").pagination__arrow.pagination__arrow--next
+                svg.svg-ico
+                    use(xlink:href="#arrow")
