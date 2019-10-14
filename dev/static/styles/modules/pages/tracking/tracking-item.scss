@@ -127,3 +127,10 @@
         }
     }
 }
+
+
+.tab-link--indicator.active {
+    &:before {
+        display: none;
+    }
+}
