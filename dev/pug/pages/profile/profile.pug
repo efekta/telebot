@@ -1,0 +1,133 @@
+.profile
+    .box-content
+        .profile-head
+            .profile-head__item
+                span.channel-wrapp-pic
+                    svg.svg-ico.svg-ico--favorite
+                        use(xlink:href='#photo-logo')      
+                .profile__name
+                    .profile-title Arnold Rothstein 
+                    .profile-subtitle Example@exp.co
+                svg.svg-ico.svg-ico--pencil
+                    use(xlink:href="#pencil")
+            .profile-head__item
+                .profile-head__value 61 544 ₽ 
+                .profile-head__value-info
+                    svg.svg-ico.svg-ico--pencil
+                        use(xlink:href="#info")
+                .profile-head__text Баланс
+            .profile-head__item
+                .profile-head__value 533
+                .profile-head__text Привлечено
+    .tabs.profile__tabs
+        ul.tabs__caption
+            li.active Аккаунт
+            li Реферальная система
+            li Выплаты баланса
+        .tabs__content.active 
+            .box-content
+                .box-content__item
+                    h2.box-content__head Изменение настроек
+                    .box-content__body
+                        .profile-half
+                            .profile__line
+                                .profile__title Email
+                                .profile__value-wrap
+                                    span.profile__value Example@exp.com
+                                    svg.svg-ico.svg-ico--pencil
+                                        use(xlink:href="#pencil")
+                            .profile__line
+                                .profile__title Аккаунт ВКонтакте
+                                .profile__value-wrap
+                                    input(type="text" placeholder="Прикрепить")
+                            .profile__line
+                                .profile__title Телеграм
+                                .profile__value-wrap
+                                    input(type="text" placeholder="id: 0000000000 (Example)")
+                            .profile__line
+                                .profile__title WMR кошелек для выплат
+                                .gifts-add__place-wrap
+                                    input(type="text" placeholder="00000000000000000" class="gifts-link gifts-add__place-input")
+                                    .gifts-add__place-tick
+                .box-content__item
+                    h2.box-content__head Изменение пароля
+                    .box-content__body
+                        .profile-half
+                            .profile__line
+                                .profile__title Введите текущий пароль
+                                .gifts-add__place-wrap
+                                    input(type="text" placeholder="000" class="gifts-link gifts-add__place-input")
+                                    ul.profile-dots
+                                        li.profile-dots__item
+                                        li.profile-dots__item
+                                        li.profile-dots__item
+                            .profile__line
+                                .profile__title Введите новый пароль
+                                .gifts-add__place-wrap
+                                    input(type="text" placeholder="000" class="gifts-link gifts-add__place-input")
+                                    .profile-error Не менее 8 символов
+                            .profile__line
+                                .profile__title Повторите новый пароль
+                                .gifts-add__place-wrap
+                                    input(type="text" placeholder="00000000" class="gifts-link gifts-add__place-input")
+                                    .gifts-add__place-tick.gifts-add__place-tick--blue
+                            .profile__line
+                                .profile-half-btn    
+                                    input(type="button" value="Изменить").button           
+        .tabs__content.profile-ref
+            .box-content
+                h2.box-content__head Реферальная система
+                .box-content__body
+                    .profile-ref__top
+                        ul.profile__header
+                            li Ссылка
+                            li Регистраций
+                            li Оплат
+                            li Комиссия
+                        ul.profile-ref__link
+                            li www.example.com
+                            li 0
+                            li 0
+                            li 0
+                        a(href="#").profile-ref__link-btn Сгенерировать еще одну
+                    .profile-ref__text 
+                        p Наш сервис предлагает вам зарабатывать вместе с нами! 
+                        p Основные правила и принципы реферальной программы просты:
+                    .profile-ref__rules
+                        .profile-ref__rule
+                            .profile-ref__rule-title Правило 1 
+                            .profile-ref__rule-text Вы будете получать 10% от суммы трат пользователей, зарегистрировавшихся по вашим реферальным ссылкам, на продление доступа
+                        .profile-ref__rule
+                            .profile-ref__rule-title Правило 2 
+                            .profile-ref__rule-text При условии хорошего количества оплат от вас мы можем увеличить ваш процент. Все условия индивидуальны и обсуждаются через поддержку
+                        .profile-ref__rule
+                            .profile-ref__rule-title Правило 3 
+                            .profile-ref__rule-text Как только пользователь регистрируется по вашей ссылке, он будет закреплен за вами навсегда - и вы будете получать свою комиссию с каждой оплаты пользователя
+                        .profile-ref__rule.profile-ref__rule--red
+                            .profile-ref__rule-title Правило 4 
+                            .profile-ref__rule-text Запрещен спам в любых его проявлениях. За это - бан аккаунта без выплат.
+                        .profile-ref__rule.profile-ref__rule--red
+                            .profile-ref__rule-title Правило 5 
+                            .profile-ref__rule-text Запрещена регистрация и оплата по своим же ссылкам. За это - бан аккаунта без выплат
+        .tabs__content.profile-cash
+            .box-content
+                h2.box-content__head История выплат
+                .box-content__body
+                    .profile-ref__top
+                        ul.profile__header
+                            li Дата
+                            li Сумма
+                            li Кошелек
+                            li Статус
+                        ul.profile-ref__link
+                            li 06.08.2019
+                            li 4 645 ₽
+                            li 0000000
+                            li.profile-cash__status Статус 1
+                        ul.profile-ref__link
+                            li 06.08.2019
+                            li 4 645 ₽
+                            li 0000000
+                            li.profile-cash__status.profile-cash__status--red Статус 1
+                    .profile-ref__text 
+                        p Для того, чтобы заказывать выплату реферального баланса, необходимо сначала задать WMR-кошелек. Сделать это можете во вкладке "Аккаунт" на этой странице.

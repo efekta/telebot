@@ -26,13 +26,7 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
-        input.gifts-link {
-            width: 100%;
-            padding: 11px 20px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-sizing: border-box;
-            border-radius: 22px;
-        }
+        
         &__places {
             display: flex;
             flex-wrap: wrap;
@@ -52,13 +46,17 @@
             &-wrap {
                 position: relative;
                 input.gifts-link {
-                    padding-right: 45px;
+                    width: 100%;
+                    padding: 13px 45px 13px 20px;
+                    border: 1px solid rgba(0, 0, 0, 0.05);
+                    box-sizing: border-box;
+                    border-radius: 22px;
                 }
             }
             &-tick {
                 position: absolute;
-                top: 1px;
-                right: 0;
+                top: 3px;
+                right: 3px;
                 width: 40px;
                 height: 40px;
                 border-radius: 50%;
@@ -76,6 +74,12 @@
                     border-bottom: 1px solid #809EFF;
                     border-left: 1px solid #809EFF;
                     transform: rotate(-45deg);
+                }
+                &--blue {
+                    background: #809EFF;
+                    &:after {
+                        border-color: #fff;
+                    }
                 }
             }
         }
@@ -113,12 +117,12 @@
     &__short {
         width: 100%;
         &-wrap {
-            
             display: flex;
             align-items: center;
             padding: 40px 0;
-            
-            
+            @media screen and (max-width: 414px) {
+                flex-wrap: wrap;
+            }
         }
 
         &:last-child {
@@ -139,9 +143,15 @@
         display: flex;
         &.open {
             justify-content: space-between;
+            @media screen and (max-width: 1040px) {
+                flex-wrap: wrap;
+            }
             .gifts {
                 &__short {
                     width: 48%;
+                    @media screen and (max-width: 1040px) {
+                        width: 100%;
+                    }
                     &-wrap {
                         padding-bottom: 0;
                     }
@@ -155,6 +165,10 @@
                 &__right {
                     display: block;
                     width: 50%;
+                    @media screen and (max-width: 1040px) {
+                        width: 100%;
+                        padding: 0;
+                    }
                 }
             }
         }
@@ -213,6 +227,9 @@
                 margin-right: 40px;
                 padding-bottom: 20px;
                 cursor: pointer;
+                @media screen and (max-width: 414px) {
+                    margin-right: 5px;
+                }
                 &.active {
                     color: #333333;
                     &:after {
@@ -325,6 +342,9 @@
         &-item {
             width: 50%;
             flex-grow: 1;
+            @media screen and (max-width: 414px) {
+                width: 100%;
+            }
         }
         &-values {
             display: flex;
@@ -345,5 +365,35 @@
             border-radius: 22px;
             padding: 20px 20px 62px;
         }
+    }
+    .search-result__body {
+        @media screen and (max-width: 1040px) {
+            flex-wrap: wrap;
+        }
+    }
+    .search-item {
+        width: 50%;
+        @media screen and (max-width: 1040px) {
+            width: 100%;
+        }
+    }
+    .box-content__head {
+        @media screen and (max-width: 470px) {
+            padding: 0;
+        }
+    }
+    .button-add {
+        position: relative;
+        right: 0;
+    }
+    .search-item__group {
+        @media screen and (max-width: 414px) {
+            margin-right: 10px;
+        }
+    }
+}
+.search-item__head {
+    @media screen and (max-width: 414px) {
+        flex-wrap: wrap;
     }
 }

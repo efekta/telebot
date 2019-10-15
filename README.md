@@ -38,3 +38,6 @@
 <p>
     <a href="https://efekta.github.io/telebot/build/gifts.html">Розыгрыши</a>
 </p>
+<p>
+    <a href="https://efekta.github.io/telebot/build/profile.html">Профиль</a>
+</p>
