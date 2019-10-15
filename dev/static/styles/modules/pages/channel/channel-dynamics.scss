@@ -13,3 +13,43 @@
 	max-width: 189px;
 	height: auto;
 }
+.statistic__item-pic-wrapp {
+	position: relative;
+	max-width: 110px;
+	margin-right: 30px;
+}
+.svg-ico-wrapp {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	padding: 10px;
+    // border: 1px solid #fff;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.17);
+    transition: all .3s;
+	svg {
+		fill: #fff;
+		width:16px;
+		height:16px;
+	}
+}
+.statistic__item__link:hover {
+	.svg-ico-wrapp {
+		background: rgba(255, 255, 255, 0.5);
+	}
+}
+.statistic__item-wrapp--inner {
+	display: flex;
+	justify-content: space-between;
+	p {
+		font-size: 16px;
+		line-height: 160%;
+		letter-spacing: 0.05em;
+		color: #333333;
+	}
+}
+.statistic--dynamics {
+	margin-bottom: 40px;
+}
