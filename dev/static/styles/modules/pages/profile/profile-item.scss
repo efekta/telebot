@@ -42,6 +42,8 @@
             font-size: 36px;
             line-height: 44px;
             color: #809EFF;
+            margin-bottom: 10px;
+            font-weight: bold;
         }
         &__text {
             width: 100%;
@@ -55,6 +57,7 @@
         font-size: 24px;
         line-height: 29px;
         font-weight: 700;
+        margin-bottom: 20px;
     }
     &-subtitle {
         font-size: 16px;
@@ -83,6 +86,7 @@
                     border-bottom-right-radius: 15px;
                 }
                 &.active {
+                    font-weight: bold;
                     color: #809EFF;
                     background: #FFFFFF;
                     box-shadow: 0px 2px 6px rgba(126, 157, 255, 0.4);
@@ -113,6 +117,7 @@
     &__value {
         font-size: 20px;
         line-height: 23px;
+        font-weight: 300;
         color: #809EFF;
         &-wrap {
             input::placeholder {
@@ -165,6 +170,7 @@
         line-height: 14px;
         color: #FF6161;
         bottom: -22px;
+        font-weight: 600;
     }
     &-ref {
         .box-content {
@@ -193,6 +199,7 @@
         &__text {
             font-size: 24px;
             line-height: 160%;
+            font-weight: 300;
             margin-bottom: 40px;
         }
         &__link {
@@ -200,7 +207,7 @@
             font-size: 20px;
             line-height: 24px;
             margin-bottom: 20px;
-            font-weight: 600;
+            font-weight: 500;
             @media screen and (max-width: 900px) {
                 width: 900px;               
             }
@@ -208,6 +215,7 @@
                 padding-right: 2%;
                 flex-basis: 0;
                 flex-grow: 1;
+                font-weight: 600;
                 &:first-child {
                     font-weight: 200;
                     color: #809EFF;
@@ -222,6 +230,7 @@
                 background: rgba(0, 0, 0, 0.05);
                 border-radius: 13px;
                 padding: 6px 10px;
+                font-weight: 500;
                 &:hover {
                     box-shadow: 0px 2px 6px rgba(126, 157, 255, 0.4);
                 }
@@ -330,7 +339,7 @@
                 padding-right: 2%;
                 &:first-child {
                     flex-grow: 1;
-                    font-weight: 600;
+                    font-weight: 500;
                     color: #333333;
                 }
             }

@@ -7,8 +7,14 @@
 .gifts {
     &-my {
         margin-bottom: 60px;
+        .box-content__head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     }
     .button-add-gift {
+        top: 0;
         font-size: 18px;
         font-weight: bold;
         width: auto;
@@ -22,9 +28,10 @@
             line-height: 16px;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            color: #333333;
+            color: #B3B3B3;
             margin-top: 30px;
             margin-bottom: 20px;
+            font-weight: 500;
         }
         
         &__places {
@@ -202,7 +209,10 @@
             z-index: 1;
         }
         .tabs__caption {
-            font-weight: bold;
+            font-weight: 500;
+            li.active {
+                font-weight: bold;
+            }
         }
         &>.tabs__caption2 {
             position: relative;
@@ -210,7 +220,7 @@
             color: #B3B3B3;
             font-size: 20px;
             line-height: 24px;
-            font-weight: 700;
+            font-weight: 600;
             margin-bottom: 20px;
             &:after {
                 content: "";
@@ -299,6 +309,7 @@
     &-winner {
         padding-top: 20px;
         text-align: center;
+        font-weight: 500;
         &__block {
             min-width: 218px;
             display: inline-block;
@@ -326,6 +337,7 @@
             font-size: 12px;
             line-height: 14px;
             color: #fff;
+            font-weight: normal;
         }
         .button {
             max-width: 160px;
@@ -363,6 +375,8 @@
             box-sizing: border-box;
             border-radius: 22px;
             padding: 20px 20px 62px;
+            font-size: 16px;
+            line-height: 160%;
         }
     }
     .search-result__body {

@@ -67,6 +67,7 @@
             }
         }
         &-text {
+            font-weight: 500;
             padding-top: 10px;
             padding-right: 20px;
             padding-left: 10px;
@@ -84,6 +85,7 @@
         .svg-ico {
             margin-right: 10px;
             color: #B3B3B3;
+            font-weight: 500;
         }
         .posts__value {
             padding-right: 21px;
@@ -131,13 +133,14 @@
         font-size: 10px;
         line-height: 12px;
         color: #B3B3B3;
+        font-weight: 500;
     }
     &--right {
         text-align: right;
         .search-item__icons .posts__value {
             padding-right: 0;
             color: #809EFF;
-            font-weight: 600;
+            font-weight: 500;
         }
     }
 }
