@@ -25,9 +25,10 @@
 				.statistic__item.statistic__item-w40
 					span.statistics-title.statistics-title--mob пост
 					.statistic__item-wrapp.statistic__item-wrapp--inner
-						a.statistic__item__link
+						a.fancybox.statistic__item__link(data-fancybox, href="https://www.youtube.com/watch?v=_sI_Ps7JSEk")
 							.statistic__item-pic-wrapp
-								img(src="../static/images/content/pic3.png", alt="pic")
+								//- img(src="../static/images/content/pic3.png", alt="pic")
+								img(class="card-img-top img-fluid" src="https://img.youtube.com/vi/_sI_Ps7JSEk/mqdefault.jpg")
 								span.svg-ico-wrapp
 									svg.svg-ico
 										use(xlink:href="#play")
