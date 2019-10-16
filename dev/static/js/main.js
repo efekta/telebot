@@ -80,6 +80,13 @@ $(document).ready(function () {
     if($('.select2').length) {
       $('.select2').select2();
     }
+    //submenu 
+    if($('.navbar-submenu__title').length) {
+      $('.navbar-submenu__title').on('click', function(e) {
+        $this = this;
+          $(this).parent().next().toggleClass('open');
+      });
+    }
     //
     if($('.amount').length) {
       var handle = $( "#custom-handle" );
@@ -153,6 +160,7 @@ $(document).ready(function () {
       $(this).parent().parent().parent().removeClass('open');
     });    
     $( ".datepicker" ).datepicker();
+
     // if ($('.audience__table').length) {
     //   var $table = $('.audience__table');
     //   var $cols = $table.find('col');

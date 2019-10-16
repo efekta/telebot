@@ -2,47 +2,63 @@
 	a(href="index.html").navbar__logo Telebot.org
 	ul.navbar-menu__list
 		li.navbar-menu__item.active
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="index.html")
 				svg.svg-ico
 					use(xlink:href="#home")
 				span Главная
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
-				svg.svg-ico
-					use(xlink:href="#canals")
-				span Каналы
+			.navbar-menu__link
+				a(href="channel.html")
+					svg.svg-ico
+						use(xlink:href="#canals")
+				span.navbar-submenu__title  Каналы
+			.navbar-submenu.open 
+				a.navbar-submenu__link(href="channels-search.html")
+					span Поиск по каналам
+				a.navbar-submenu__link(href="channels-bookmarks.html")
+					span Каналы в закладках
+				a.navbar-submenu__link(href="channels-my.html")
+					span Мои каналы
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
-				svg.svg-ico
-					use(xlink:href="#posts")
-				span Посты
+			.navbar-menu__link
+				a(href="posts.html")
+					svg.svg-ico
+						use(xlink:href="#posts")
+				span.navbar-submenu__title  Посты
+			.navbar-submenu 
+				a.navbar-submenu__link(href="#")
+					span Поиск по каналам
+				a.navbar-submenu__link(href="#")
+					span Каналы в закладках
+				a.navbar-submenu__link(href="#")
+					span Мои каналы
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="bots.html")
 				svg.svg-ico
 					use(xlink:href="#roboto")
 				span Боты
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="tracking.html")
 				svg.svg-ico
 					use(xlink:href="#binocl")
 				span Отслеживание
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="gifts.html")
 				svg.svg-ico
 					use(xlink:href="#trophy")
 				span Розыгрыши
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="audience.html")
 				svg.svg-ico
 					use(xlink:href="#line-chart")
 				span Аудитория
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="telegraph.html")
 				svg.svg-ico
 					use(xlink:href="#alpha")
 				span Telegraph
 		li.navbar-menu__item
-			a.navbar-menu__link(href="")
+			a.navbar-menu__link(href="profile.html")
 				svg.svg-ico
 					use(xlink:href="#insta")
 				span Spy Stories
