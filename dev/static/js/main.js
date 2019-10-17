@@ -213,7 +213,13 @@ $(document).ready(function () {
     //       $cols.eq(this.cellIndex).toggleClass('table-hover');
     //   });
     // }
-
+  /*========================
+     fancy
+    =========================*/
+  $('.fancybox').fancybox({ 
+    animationEffect : 'fade'
+  }).attr('data-fancybox');
+  // $(".fancybox").fancybox();
 });
 
 
