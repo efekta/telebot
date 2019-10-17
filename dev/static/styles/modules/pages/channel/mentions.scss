@@ -5,9 +5,57 @@
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	@media screen and (max-width: 725px) {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+}
+.mention__item {
+    @media screen and (max-width: 725px) {
+		display: flex;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	@media screen and (max-width: 449px) {
+		flex-wrap: wrap;
+    }
+    .mention-title {
+        display: none;
+        @media screen and (max-width: 725px) {
+            display: block;
+            width: 50%;
+		}
+		@media screen and (max-width: 449px) {
+			width: 100%;
+		}
+    }
+    span {
+        @media screen and (max-width: 725px) {
+            padding-right: 5px;
+        }
+	}
+	&:last-child {
+		text-align: right;
+		@media screen and (max-width: 725px) {
+			text-align: left;
+		}
+	}
+}
+.mention-header {
+    .mention__item .mention-title {
+        display: block;
+    }
+    @media screen and (max-width: 725px) {
+        display: none;
+    }
+}
+.mention__item-wrapp {
+    @media screen and (max-width: 725px) {
+        width: 50%;
+    }
 }
 .mention__item_w44 {
-    width: 44%;
+	width: 44%;
 }
 .mention__item_w28 {
 	width: 28%;
@@ -22,7 +70,10 @@
     line-height: 16px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #B3B3B3;
+	color: #B3B3B3;
+	@media screen and (max-width: 725px) {
+		margin-bottom: 5px;
+	}
 }
 .canal__item.canal__item_name p {
 	font-weight: bold;
@@ -31,6 +82,16 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: nowrap;
+	@media screen and (max-width: 725px) {
+		padding-right: 2%;
+		flex-wrap: wrap;
+	}
+	.mention__item-title {
+		@media screen and (max-width: 449px) {
+			text-transform: initial;
+			font-size: 15px;
+		}
+	}
 }
 .mention__item-title {
 	text-transform: uppercase;
@@ -46,13 +107,23 @@
 	letter-spacing: 0.05em;
 	color: #809EFF;
 }
+.mention-dates {
+	@media screen and (max-width: 725px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
 .mention-date {
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 14px;
 	letter-spacing: 0.05em;
 	color: #333333;
+	@media screen and (max-width: 725px) {
+		padding-right: 20px;
+	}
 }
+
 .text-right {
 	text-align: right;
 }
@@ -60,4 +131,9 @@
     .box-content__item--mentions {
         width: 100%;
     }
+}
+@media screen and (max-width: 725px) {
+	.mention__item {
+		width: 100%;
+	}
 }

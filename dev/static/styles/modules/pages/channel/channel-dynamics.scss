@@ -90,12 +90,18 @@
 		width: 24%;
 	}
 }
+
 @media screen and (max-width: 768px) {
 	.statistic__item--mob-w49 {
 		width: 50%;
 	}
 	.statistic__item-wrapp.statistic__item-wrapp--inner {
 		flex-wrap: wrap;
+	}
+}
+@media screen and (max-width: 725px) {
+	.statistic__item {
+		margin-bottom: 8px;
 	}
 }
 @media screen and (max-width: 540px) {

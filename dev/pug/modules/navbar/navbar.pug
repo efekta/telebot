@@ -6,32 +6,35 @@
 				svg.svg-ico
 					use(xlink:href="#home")
 				span Главная
-		li.navbar-menu__item
+		li.navbar-menu__item.open
 			.navbar-menu__link
 				a(href="channel.html")
 					svg.svg-ico
 						use(xlink:href="#canals")
 				span.navbar-submenu__title  Каналы
-			.navbar-submenu.open 
+				span.navbar-submenu__title.navbar-submenu__mob 
+			.navbar-submenu 
 				a.navbar-submenu__link(href="channels-search.html")
 					span Поиск по каналам
 				a.navbar-submenu__link(href="channels-bookmarks.html")
 					span Каналы в закладках
 				a.navbar-submenu__link(href="channels-my.html")
 					span Мои каналы
+					
 		li.navbar-menu__item
 			.navbar-menu__link
 				a(href="posts.html")
 					svg.svg-ico
 						use(xlink:href="#posts")
 				span.navbar-submenu__title  Посты
+				span.navbar-submenu__title.navbar-submenu__mob 
 			.navbar-submenu 
 				a.navbar-submenu__link(href="#")
-					span Поиск по каналам
+					span Рекламные посты
 				a.navbar-submenu__link(href="#")
-					span Каналы в закладках
+					span Посты в закладках
 				a.navbar-submenu__link(href="#")
-					span Мои каналы
+					span Все посты
 		li.navbar-menu__item
 			a.navbar-menu__link(href="bots.html")
 				svg.svg-ico
