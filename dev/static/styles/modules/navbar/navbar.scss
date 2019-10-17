@@ -20,6 +20,7 @@
 	color: #7E9DFF;
 }
 .navbar-menu__item {
+	position: relative;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	&.active {
@@ -28,6 +29,17 @@
 		}
 		.svg-ico {
 			fill: #809EFF;
+		}
+	}
+	&.open {
+		.navbar-submenu {
+			display: block;
+		}
+		.navbar-submenu__mob {
+			&:after {
+				top: 8px;
+				transform: rotate(135deg);
+			}
 		}
 	}
 }
@@ -103,9 +115,38 @@
 	display: none;
 	padding-left: 107px;
 	font-weight: 500;
-	&.open {
-		display: block;
+	@media screen and (max-width: 1860px){
+		position: absolute;
+		top: 40px;
+		left: 0;
+		padding-left: 0;
+		min-width: 150px;
 	}
+	&__mob {
+		display: none;
+		@media screen and (max-width: 1860px){
+			display: block;
+			min-width: 24px;
+			height: 24px;
+			margin: 0;
+			position: relative;
+			&.navbar-submenu__title {
+				margin: 0;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				top: 5px;
+    			right: 10px;
+				width: 10px;
+				height: 10px;
+				border-left: 2px solid #B3B3B3;
+				border-bottom:  2px solid #B3B3B3;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+
 	&__link {
 		display: block;
 		font-size: 12px;
@@ -113,6 +154,10 @@
 		color: #B3B3B3;
 		padding-top: 10px;
 		padding-bottom: 10px;
+		@media screen and (max-width: 1860px){
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
 		&:hover {
 			color: #333333;
 		}
@@ -141,6 +186,7 @@
 	.navbar-menu__list {
 		display: flex;
 		justify-content: space-between;
+		padding-bottom: 76px;
 	}
 	.navbar-menu__item {
 		margin: 0 20px;
@@ -165,5 +211,9 @@
 	.navbar-menu__list {
 		overflow-x: scroll;
 		overflow-y: hidden;
+	}
+	.navbar-menu__link .svg-ico {
+		width: 18px;
+   		height: 16px;
 	}
 }

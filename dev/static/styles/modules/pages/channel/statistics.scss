@@ -15,6 +15,53 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
+    @media screen and (max-width: 725px) {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+}
+.statistic__item {
+    @media screen and (max-width: 725px) {
+        display: flex;
+    }
+    @media screen and (max-width: 449px) {
+        flex-wrap: wrap;
+    }
+    .statistics-title {
+        display: none;
+        @media screen and (max-width: 725px) {
+            display: block;
+            width: 50%;
+            +p {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width: 449px) {
+            width: 100%;
+            margin-bottom: 7px;
+            +p {
+                width: 100%;
+            }
+        }
+    }
+    span {
+        @media screen and (max-width: 725px) {
+            padding-right: 5px;
+        }
+    }
+}
+.statistic-header {
+    .statistic__item .statistics-title {
+        display: block;
+    }
+    @media screen and (max-width: 725px) {
+        display: none;
+    }
+}
+.statistic__item-wrapp {
+    @media screen and (max-width: 725px) {
+        width: 50%;
+    }
 }
 .statistic__item_w50 {
     width: 50%;

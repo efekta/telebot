@@ -144,7 +144,9 @@ ul.tabs li.current {
   }
 }
 @media screen and (max-width: 768px) {
-
+  .box-content__item {
+    margin: 20px 0;
+  }
   ul.tabs li {
     font-size: 14px;
     margin-right: 5px;

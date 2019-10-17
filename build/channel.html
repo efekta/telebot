@@ -258,19 +258,19 @@
               <svg class="svg-ico">
                 <use xlink:href="#home"></use>
               </svg><span>Главная</span></a></li>
-          <li class="navbar-menu__item">
+          <li class="navbar-menu__item open">
             <div class="navbar-menu__link"><a href="channel.html">
                 <svg class="svg-ico">
                   <use xlink:href="#canals"></use>
-                </svg></a><span class="navbar-submenu__title"> Каналы</span></div>
-            <div class="navbar-submenu open"> <a class="navbar-submenu__link" href="channels-search.html"><span>Поиск по каналам</span></a><a class="navbar-submenu__link" href="channels-bookmarks.html"><span>Каналы в закладках</span></a><a class="navbar-submenu__link" href="channels-my.html"><span>Мои каналы</span></a></div>
+                </svg></a><span class="navbar-submenu__title"> Каналы</span><span class="navbar-submenu__title navbar-submenu__mob"> </span></div>
+            <div class="navbar-submenu"> <a class="navbar-submenu__link" href="channels-search.html"><span>Поиск по каналам</span></a><a class="navbar-submenu__link" href="channels-bookmarks.html"><span>Каналы в закладках</span></a><a class="navbar-submenu__link" href="channels-my.html"><span>Мои каналы</span></a></div>
           </li>
           <li class="navbar-menu__item">
             <div class="navbar-menu__link"><a href="posts.html">
                 <svg class="svg-ico">
                   <use xlink:href="#posts"></use>
-                </svg></a><span class="navbar-submenu__title"> Посты</span></div>
-            <div class="navbar-submenu"> <a class="navbar-submenu__link" href="#"><span>Поиск по каналам</span></a><a class="navbar-submenu__link" href="#"><span>Каналы в закладках</span></a><a class="navbar-submenu__link" href="#"><span>Мои каналы</span></a></div>
+                </svg></a><span class="navbar-submenu__title"> Посты</span><span class="navbar-submenu__title navbar-submenu__mob"> </span></div>
+            <div class="navbar-submenu"> <a class="navbar-submenu__link" href="#"><span>Рекламные посты</span></a><a class="navbar-submenu__link" href="#"><span>Посты в закладках</span></a><a class="navbar-submenu__link" href="#"><span>Все посты</span></a></div>
           </li>
           <li class="navbar-menu__item"><a class="navbar-menu__link" href="bots.html">
               <svg class="svg-ico">
@@ -362,6 +362,11 @@
             <div class="statistics">
               <h2 class="box-content__head">Рекламная статистика</h2>
               <div class="box-content__body">
+                <div class="statistic statistic-header">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span></div>
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span></div>
+                </div>
                 <div class="statistic">
                   <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
@@ -383,31 +388,32 @@
                   </div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="green-text">+3</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="green-text">+3</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост </span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост </span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="statistic__lid"></span></div>
                   </div>
                   <div class="statistic__item statistic__item_w50">
+                    <pan class="statistics-title">Прирост</pan>
                     <p><span class="purple-text">Репост</span> в <span class="purple-text">Название канала</span><span>
                         <svg class="svg-ico svg-ico-small_line-chart">
                           <use xlink:href="#small_line-chart"></use>
@@ -421,31 +427,31 @@
                   </div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="green-text">+3</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="green-text">+3</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="statistic__lid"></span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50">
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span>
                     <p><span class="purple-text">Репост</span> в <span class="purple-text">Название канала</span><span>
                         <svg class="svg-ico svg-ico-small_line-chart">
                           <use xlink:href="#small_line-chart"></use>
@@ -459,31 +465,31 @@
                   </div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="green-text">+3</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="green-text">+3</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="statistic__lid"></span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50">
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span>
                     <p><span class="purple-text">Репост</span> в <span class="purple-text">Название канала</span><span>
                         <svg class="svg-ico svg-ico-small_line-chart">
                           <use xlink:href="#small_line-chart"></use>
@@ -497,31 +503,31 @@
                   </div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="green-text">+3</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="green-text">+3</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="statistic__lid"></span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50">
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span>
                     <p><span class="purple-text">Репост</span> в <span class="purple-text">Название канала</span><span>
                         <svg class="svg-ico svg-ico-small_line-chart">
                           <use xlink:href="#small_line-chart"></use>
@@ -535,22 +541,22 @@
                   </div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="green-text">+3</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="green-text">+3</span></div>
                 </div>
                 <div class="statistic">
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">время</span>
                     <div class="statistic__item-wrapp"><span class="statistic__date">06.08.2019 13:55</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w25">
+                  <div class="statistic__item statistic__item_w25"><span class="statistics-title">Подписчиков</span>
                     <div class="statistic__item-wrapp"><span class="purple-text statistic__lid">609 953</span></div>
                   </div>
-                  <div class="statistic__item statistic__item_w50"><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
+                  <div class="statistic__item statistic__item_w50"><span class="statistics-title">Прирост</span><span class="red-text">-3 </span><span>вышел </span><span class="purple-text">пост</span></div>
                 </div>
               </div>
             </div>
@@ -559,6 +565,11 @@
             <div class="mentions">
               <h2 class="box-content__head">Кто упоминал</h2>
               <div class="box-content__body">
+                <div class="mention mention-header">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span></div>
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span></div>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span></div>
+                </div>
                 <div class="mention">
                   <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
@@ -579,14 +590,16 @@
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right"><span class="mention-title">Посты</span>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -601,18 +614,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -627,18 +642,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -653,18 +670,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -679,18 +698,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -705,18 +726,20 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
                 <div class="mention">
-                  <div class="mention__item mention__item_w44">
+                  <div class="mention__item mention__item_w44"><span class="mention-title">Канал</span>
                     <div class="canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -731,14 +754,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="mention__item mention__item_w28">
+                  <div class="mention__item mention__item_w28"><span class="mention-title">Упоминаний</span>
                     <div class="mention__item-desc"><span class="mention__item-title">Упомин</span><span class="mention__item-num">66</span></div>
                     <div class="mention__item-desc"><span class="mention__item-title">Репосты</span><span class="mention__item-num">5673</span></div>
                   </div>
-                  <div class="mention__item mention__item_w250 text-right">
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
-                    <p class="mention-date">06.08.2019</p>
+                  <div class="mention__item mention__item_w250"><span class="mention-title">Посты</span>
+                    <div class="mention-dates">
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                      <p class="mention-date">06.08.2019</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -754,6 +779,13 @@
                   <label for="buy">Показывать репосты</label></span>
               </div>
               <div class="box-content__body">
+                <div class="buy-advertising buy-advertising-header">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span></div>
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span></div>
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span></div>
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span></div>
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span></div>
+                </div>
                 <div class="buy-advertising">
                   <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">06.08.2019 13:55:22</span></div>
@@ -785,10 +817,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -799,13 +831,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -840,10 +872,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -854,13 +886,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -895,10 +927,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -909,13 +941,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -950,10 +982,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -964,13 +996,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -1005,10 +1037,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -1019,13 +1051,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -1060,10 +1092,10 @@
                   </div>
                 </div>
                 <div class="buy-advertising">
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Размещенный пост</span>
                     <div class="buy-advertising-wrapp"><span class="statistic__date">Подборка</span></div>
                   </div>
-                  <div class="buy-advertising__item">
+                  <div class="buy-advertising__item"><span class="statistics-title">Рекламируемый канал</span>
                     <div class="buy-advertising-wrapp canal__item_wrapp">
                       <div class="canal__item canal__item_logo"><span>
                           <svg class="svg-ico">
@@ -1074,13 +1106,13 @@
                       </div>
                     </div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w16">
+                  <div class="buy-advertising__item buy-advertising__item--w16"><span class="statistics-title">Приход</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w22">
+                  <div class="buy-advertising__item buy-advertising__item--w22"><span class="statistics-title">Период подсчета</span>
                     <div class="buy-advertising-wrapp"><span class="purple-text">?</span></div>
                   </div>
-                  <div class="buy-advertising__item buy-advertising__item--w15">
+                  <div class="buy-advertising__item buy-advertising__item--w15"><span class="statistics-title">Постов продвигается</span>
                     <div class="buy-advertising-wrapp"><span class="text-bold">234</span></div>
                   </div>
                 </div>
@@ -1716,7 +1748,7 @@
                   <div class="statistic__item-wrapp"><span>13</span></div>
                 </div>
                 <div class="statistic__item statistic__item-w40"><span class="statistics-title statistics-title--mob">пост</span>
-                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link">
+                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link fancybox" data-fancybox="gallery" href="https://www.youtube.com/embed/fEErySYqItI">
                       <div class="statistic__item-pic-wrapp"><img src="../static/images/content/pic3.png" alt="pic"><span class="svg-ico-wrapp">
                           <svg class="svg-ico">
                             <use xlink:href="#play"></use>
@@ -1742,7 +1774,7 @@
                   <div class="statistic__item-wrapp"><span>13</span></div>
                 </div>
                 <div class="statistic__item statistic__item-w40"><span class="statistics-title statistics-title--mob">пост</span>
-                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link">
+                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link fancybox" data-fancybox="gallery" href="https://www.youtube.com/embed/fEErySYqItI">
                       <div class="statistic__item-pic-wrapp"><img src="../static/images/content/pic3.png" alt="pic"><span class="svg-ico-wrapp">
                           <svg class="svg-ico">
                             <use xlink:href="#play"></use>
@@ -1768,7 +1800,7 @@
                   <div class="statistic__item-wrapp"><span>13</span></div>
                 </div>
                 <div class="statistic__item statistic__item-w40"><span class="statistics-title statistics-title--mob">пост</span>
-                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link">
+                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link fancybox" data-fancybox="gallery" href="https://www.youtube.com/embed/fEErySYqItI">
                       <div class="statistic__item-pic-wrapp"><img src="../static/images/content/pic3.png" alt="pic"><span class="svg-ico-wrapp">
                           <svg class="svg-ico">
                             <use xlink:href="#play"></use>
@@ -1794,7 +1826,7 @@
                   <div class="statistic__item-wrapp"><span>13</span></div>
                 </div>
                 <div class="statistic__item statistic__item-w40"><span class="statistics-title statistics-title--mob">пост</span>
-                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link">
+                  <div class="statistic__item-wrapp statistic__item-wrapp--inner"><a class="statistic__item__link fancybox" data-fancybox="gallery" href="https://www.youtube.com/embed/fEErySYqItI">
                       <div class="statistic__item-pic-wrapp"><img src="../static/images/content/pic3.png" alt="pic"><span class="svg-ico-wrapp">
                           <svg class="svg-ico">
                             <use xlink:href="#play"></use>
