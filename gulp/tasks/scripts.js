@@ -13,7 +13,9 @@ module.exports = function () {
             'dev/libs/select2/select2.full.js',
             'dev/libs/jquery-ui/jquery-ui.js',
             'dev/libs/jquery-ui/datepicker-ru.js',
-            'dev/libs/fancybox/jquery.fancybox.js'
+            'dev/libs/fancybox/jquery.fancybox.js',
+            'dev/libs/daterangepicker/moment.min.js',
+            'dev/libs/daterangepicker/daterangepicker.min.js'
             // 'dev/libs/liteChart/liteChart.js'
             ])
             .pipe(concat('libs.min.js'))
@@ -27,7 +29,9 @@ module.exports = function () {
             'dev/libs/select2/select2.full.js',
             'dev/libs/jquery-ui/jquery-ui.js',
             'dev/libs/jquery-ui/datepicker-ru.js',
-            'dev/libs/fancybox/jquery.fancybox.js'
+            'dev/libs/fancybox/jquery.fancybox.js',
+            'dev/libs/daterangepicker/moment.min.js',
+            'dev/libs/daterangepicker/daterangepicker.min.js'
             // 'dev/libs/liteChart/liteChart.js'
             ])
             .pipe(concat('libs.min.js'))

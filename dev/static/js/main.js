@@ -2,6 +2,12 @@ $(document).ready(function () {
 
     svg4everybody({});
 
+    // 1 символ - /   console.log(window.location.pathname.slice(1));
+    console.log(window.location.pathname.slice(1));
+    $('.navbar-menu__item > a[href="' + window.location.pathname.slice(1) + '"]').parent().addClass('active');
+    $('.navbar-menu__link > a[href="' + window.location.pathname.slice(1) + '"]').parent().parent().addClass('active');
+    $('.navbar-submenu > a[href="' + window.location.pathname.slice(1) + '"]').addClass('active');
+
     /* User Form*/
     $('.box-drop-down').on('click', function() {
     	$('.form-wrap__user-cab').toggleClass('show');
@@ -160,6 +166,16 @@ $(document).ready(function () {
       $(this).parent().parent().parent().removeClass('open');
     });    
     $( ".datepicker" ).datepicker();
+    $('input[name="daterangepicker"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+        format: 'DD.M.YYYY'
+      }
+    });
+    $('input[name="daterangepicker"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('DD.M.YYYY') + ' - ' + picker.endDate.format('DD.M.YYYY'));
+    });
+
     $(".fancybox").fancybox();
 
     // Fires whenever a player has finished loading

@@ -170,3 +170,15 @@
     align-items: center;
     justify-content: center;
 }
+//daterangepicker
+.daterangepicker td.start-date.end-date,
+.daterangepicker td.start-date,
+.daterangepicker td.end-date,
+.daterangepicker .calendar-table th,
+.daterangepicker .calendar-table td {
+    border-radius: 50%;
+}
+.daterangepicker .calendar-table th, 
+.daterangepicker .calendar-table td {
+    height: 32px;
+}

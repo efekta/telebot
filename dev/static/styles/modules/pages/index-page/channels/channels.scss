@@ -2,7 +2,12 @@
 	display: flex;
 	justify-content: space-between;
 	font-weight: bold;
-	margin-bottom: 20px;
+	padding: 10px;
+	&:hover {
+		cursor: pointer;
+		// box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+		// border-radius: 20px;
+	}
 }
 
 .canal__item_wrapp {
@@ -80,17 +85,17 @@
 }
 .canal:hover {
 	.text-shadow {
-		text-shadow: 2px 3px 2px rgba(51,51,51,0.4);
+		text-shadow: 2px 3px 2px rgba(51,51,51,0.2);
 	}
 	.svg-wrap-shadow {
-		box-shadow: 2px 3px 2px rgba(51,51,51,0.4);
+		box-shadow: 2px 3px 2px rgba(51,51,51,0.2);
 	}
 }
 
 .canal:hover {
 	.svg-ico-user-canal-logo, .svg-ico-small_line-chart, .svg-ico-podpischic {
-		-webkit-filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.4));
-		filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.4));
+		-webkit-filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.2));
+		filter: drop-shadow(2px 3px 2px rgba(51,51,51,0.2));
 	}
 
 }
