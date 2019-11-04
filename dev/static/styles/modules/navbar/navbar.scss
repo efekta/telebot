@@ -190,6 +190,9 @@
 			margin-bottom: -10px;
 		} 
 	}
+	&--mob {
+		display: none;
+	}
 }
 @media screen and (max-width: 1860px) {
 	.navbar {
@@ -233,5 +236,24 @@
 	.navbar-menu__link .svg-ico {
 		width: 18px;
    		height: 16px;
+	}
+	.navbar-submenu--mob {
+		display: block;
+		top: auto;
+		bottom: -68px;
+		left: 2%;
+		position: absolute;
+		padding-left: 0;
+		min-width: 150px;
+		background: #fff;
+		padding: 10px;
+		border-radius: 10px;
+		&.open {
+
+		}
+		.navbar-submenu {
+			display: block;
+			position: static;
+		}
 	}
 }
