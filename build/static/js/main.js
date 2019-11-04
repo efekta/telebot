@@ -173,12 +173,14 @@ $(document).ready(function () {
       if ($('.tracking__add').has(e.target).length === 0) {
         $('.tracking__add').removeClass('active');
         $(this).toggleClass('active');
+        $('body').toggleClass('modal-open');
       } 
     });
 
     $('.tracking__add .close-ico').on('click', function() {
       $this = this;
-      $(this).parent().parent().parent().removeClass('active');
+      $(this).parent().parent().parent().parent().removeClass('active');
+      $('body').removeClass('modal-open');
     });   
     $('.gifts__more').on('click', function() {
       $this = this;
@@ -186,7 +188,7 @@ $(document).ready(function () {
     });
     $('.gifts__about__close').on('click', function() {
       $this = this;
-      $(this).parent().parent().parent().removeClass('open');
+      $(this).parent().parent().parent().parent().removeClass('open');
     });    
     $( ".datepicker" ).datepicker();
     $('input[name="daterangepicker"]').daterangepicker({

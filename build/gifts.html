@@ -305,68 +305,70 @@
             <h2 class="box-content__head">Мои розыгрыши
               <div class="button button-add button-add-gift">Создать
                 <div class="tracking__add">
-                  <div class="price-info__title"><span class="subtitle-item">Создать розыгрыш</span><span class="close-ico">
-                      <svg class="svg-ico svg-ico_close">
-                        <use xlink:href="#close"></use>
-                      </svg></span></div>
-                  <form action="">
-                    <div class="gifts-add">
-                      <input class="gifts-link" type="text" placeholder="Введите ссылку на канал/чат">
-                      <div class="gifts-add__title">Срок конкурса</div>
-                      <div class="price-info__group">
-                        <input type="radio" name="price-info" id="price-info1">
-                        <label for="price-info1">Из диапазона (дни)</label>
-                        <div class="price-info__range">
-                          <div class="price-slider"></div>
+                  <div class="tracking__add--wrap">
+                    <div class="price-info__title"><span class="subtitle-item">Создать розыгрыш</span><span class="close-ico">
+                        <svg class="svg-ico svg-ico_close">
+                          <use xlink:href="#close"></use>
+                        </svg></span></div>
+                    <form action="">
+                      <div class="gifts-add">
+                        <input class="gifts-link" type="text" placeholder="Введите ссылку на канал/чат">
+                        <div class="gifts-add__title">Срок конкурса</div>
+                        <div class="price-info__group">
+                          <input type="radio" name="price-info" id="price-info1">
+                          <label for="price-info1">Из диапазона (дни)</label>
+                          <div class="price-info__range">
+                            <div class="price-slider"></div>
+                          </div>
+                          <div class="price-info__value">
+                            <div class="price-info__label">0</div>
+                            <input class="amount-gift" type="text" readonly value="7">
+                            <div class="price-info__label">90</div>
+                          </div>
                         </div>
-                        <div class="price-info__value">
-                          <div class="price-info__label">0</div>
-                          <input class="amount-gift" type="text" readonly value="7">
-                          <div class="price-info__label">90</div>
-                        </div>
-                      </div>
-                      <div class="price-info__group">
-                        <input type="radio" name="price-info" id="price-info2">
-                        <label for="price-info2">Свой срок</label>
-                        <div>
-                          <div class="tabs gifts__tabs">
-                            <ul class="tabs__caption">
-                              <li class="active">Дней</li>
-                              <li>Недель</li>
-                              <li>Месяцев</li>
-                            </ul>
-                            <div class="tabs__content active"> 
-                              <input class="gifts__myamount" type="text" placeholder="Количество">
-                            </div>
-                            <div class="tabs__content">
-                              <input class="gifts__myamount" type="text" placeholder="Количество недель">
-                            </div>
-                            <div class="tabs__content">
-                              <input class="gifts__myamount" type="text" placeholder="Количество месяцев">
+                        <div class="price-info__group">
+                          <input type="radio" name="price-info" id="price-info2">
+                          <label for="price-info2">Свой срок</label>
+                          <div>
+                            <div class="tabs gifts__tabs">
+                              <ul class="tabs__caption">
+                                <li class="active">Дней</li>
+                                <li>Недель</li>
+                                <li>Месяцев</li>
+                              </ul>
+                              <div class="tabs__content active"> 
+                                <input class="gifts__myamount" type="text" placeholder="Количество">
+                              </div>
+                              <div class="tabs__content">
+                                <input class="gifts__myamount" type="text" placeholder="Количество недель">
+                              </div>
+                              <div class="tabs__content">
+                                <input class="gifts__myamount" type="text" placeholder="Количество месяцев">
+                              </div>
                             </div>
                           </div>
                         </div>
+                        <div class="gifts-add__title">Призы за первые 5 мест</div>
+                        <div class="gifts-add__place-wrap">
+                          <input class="gifts-link gifts-add__place-input" type="text" placeholder="3 место">
+                          <div class="gifts-add__place-tick"></div>
+                        </div>
+                        <div class="gifts-add__places">
+                          <div class="gifts-add__place">1. Приз <span class="close-ico">
+                              <svg class="svg-ico svg-ico_close">
+                                <use xlink:href="#close"></use>
+                              </svg></span></div>
+                          <div class="gifts-add__place">2. Приз<span class="close-ico">
+                              <svg class="svg-ico svg-ico_close">
+                                <use xlink:href="#close"></use>
+                              </svg></span></div>
+                        </div>
+                        <div class="gifts-add__title">Описание</div>
+                        <textarea name="gift_description" rows="5" placeholder="Опишите розыгрыш"></textarea>
+                        <button class="button">Создать</button>
                       </div>
-                      <div class="gifts-add__title">Призы за первые 5 мест</div>
-                      <div class="gifts-add__place-wrap">
-                        <input class="gifts-link gifts-add__place-input" type="text" placeholder="3 место">
-                        <div class="gifts-add__place-tick"></div>
-                      </div>
-                      <div class="gifts-add__places">
-                        <div class="gifts-add__place">1. Приз <span class="close-ico">
-                            <svg class="svg-ico svg-ico_close">
-                              <use xlink:href="#close"></use>
-                            </svg></span></div>
-                        <div class="gifts-add__place">2. Приз<span class="close-ico">
-                            <svg class="svg-ico svg-ico_close">
-                              <use xlink:href="#close"></use>
-                            </svg></span></div>
-                      </div>
-                      <div class="gifts-add__title">Описание</div>
-                      <textarea name="gift_description" rows="5" placeholder="Опишите розыгрыш"></textarea>
-                      <button class="button">Создать</button>
-                    </div>
-                  </form>
+                    </form>
+                  </div>
                 </div>
               </div>
             </h2>

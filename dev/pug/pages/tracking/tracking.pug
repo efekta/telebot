@@ -3,23 +3,24 @@
         h2.box-content__head Управление отслеживаниями
             .button-add +
                 .tracking__add
-                    .price-info__title
-                        span.subtitle-item Добавить отслеживание
-                        span.close-ico
-                            svg.svg-ico.svg-ico_close
-                                use(xlink:href="#close")
-                    .tabs.tracking__add-choice
-                        ul.tabs__caption
-                            li.active Упоминание канала
-                            li Слово или фраза
-                        .tabs__content.active 
-                            form(action="")
-                                input(type="text" placeholder="Введите слово или фразу") 
-                                button.button Найти
-                        .tabs__content
-                            form(action="")
-                                input(type="text" placeholder="Введите канал") 
-                                button.button Найти
+                    .tracking__add--wrap
+                        .price-info__title
+                            span.subtitle-item Добавить отслеживание
+                            span.close-ico
+                                svg.svg-ico.svg-ico_close
+                                    use(xlink:href="#close")
+                        .tabs.tracking__add-choice
+                            ul.tabs__caption
+                                li.active Упоминание канала
+                                li Слово или фраза
+                            .tabs__content.active 
+                                form(action="")
+                                    input(type="text" placeholder="Введите слово или фразу") 
+                                    button.button Найти
+                            .tabs__content
+                                form(action="")
+                                    input(type="text" placeholder="Введите канал") 
+                                    button.button Найти
         .box-content__body
             .tracking-items
                 .tracking__header

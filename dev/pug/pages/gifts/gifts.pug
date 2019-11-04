@@ -3,56 +3,57 @@
         h2.box-content__head Мои розыгрыши
             .button.button-add.button-add-gift Создать
                 .tracking__add
-                    .price-info__title
-                        span.subtitle-item Создать розыгрыш
-                        span.close-ico
-                            svg.svg-ico.svg-ico_close
-                                use(xlink:href="#close")
-                    form(action="")
-                        .gifts-add
-                            input(type="text" placeholder="Введите ссылку на канал/чат" class="gifts-link")
-                            .gifts-add__title Срок конкурса
-                            .price-info__group
-                                input(type="radio" name="price-info" id="price-info1")
-                                label(for="price-info1") Из диапазона (дни)
-                                .price-info__range
-                                    .price-slider
-                                        //- #custom-handle.ui-slider-handle
-                                .price-info__value
-                                    .price-info__label 0
-                                    input(type="text" class="amount-gift" readonly value="7")
-                                    .price-info__label 90
-                            .price-info__group
-                                input(type="radio" name="price-info" id="price-info2")
-                                label(for="price-info2") Свой срок
-                                div
-                                    .tabs.gifts__tabs
-                                        ul.tabs__caption
-                                            li.active Дней
-                                            li Недель
-                                            li Месяцев
-                                        .tabs__content.active 
-                                            input(type="text" placeholder="Количество" class="gifts__myamount")
-                                        .tabs__content
-                                            input(type="text" placeholder="Количество недель" class="gifts__myamount")
-                                        .tabs__content
-                                            input(type="text" placeholder="Количество месяцев" class="gifts__myamount")
-                            .gifts-add__title Призы за первые 5 мест
-                            .gifts-add__place-wrap
-                                input(type="text" placeholder="3 место" class="gifts-link gifts-add__place-input")
-                                .gifts-add__place-tick
-                            .gifts-add__places
-                                .gifts-add__place 1. Приз 
-                                    span.close-ico
-                                        svg.svg-ico.svg-ico_close
-                                            use(xlink:href="#close")
-                                .gifts-add__place 2. Приз
-                                    span.close-ico
-                                        svg.svg-ico.svg-ico_close
-                                            use(xlink:href="#close")
-                            .gifts-add__title Описание
-                            textarea(name="gift_description", rows="5", placeholder="Опишите розыгрыш")
-                            button.button Создать
+                    .tracking__add--wrap
+                        .price-info__title
+                            span.subtitle-item Создать розыгрыш
+                            span.close-ico
+                                svg.svg-ico.svg-ico_close
+                                    use(xlink:href="#close")
+                        form(action="")
+                            .gifts-add
+                                input(type="text" placeholder="Введите ссылку на канал/чат" class="gifts-link")
+                                .gifts-add__title Срок конкурса
+                                .price-info__group
+                                    input(type="radio" name="price-info" id="price-info1")
+                                    label(for="price-info1") Из диапазона (дни)
+                                    .price-info__range
+                                        .price-slider
+                                            //- #custom-handle.ui-slider-handle
+                                    .price-info__value
+                                        .price-info__label 0
+                                        input(type="text" class="amount-gift" readonly value="7")
+                                        .price-info__label 90
+                                .price-info__group
+                                    input(type="radio" name="price-info" id="price-info2")
+                                    label(for="price-info2") Свой срок
+                                    div
+                                        .tabs.gifts__tabs
+                                            ul.tabs__caption
+                                                li.active Дней
+                                                li Недель
+                                                li Месяцев
+                                            .tabs__content.active 
+                                                input(type="text" placeholder="Количество" class="gifts__myamount")
+                                            .tabs__content
+                                                input(type="text" placeholder="Количество недель" class="gifts__myamount")
+                                            .tabs__content
+                                                input(type="text" placeholder="Количество месяцев" class="gifts__myamount")
+                                .gifts-add__title Призы за первые 5 мест
+                                .gifts-add__place-wrap
+                                    input(type="text" placeholder="3 место" class="gifts-link gifts-add__place-input")
+                                    .gifts-add__place-tick
+                                .gifts-add__places
+                                    .gifts-add__place 1. Приз 
+                                        span.close-ico
+                                            svg.svg-ico.svg-ico_close
+                                                use(xlink:href="#close")
+                                    .gifts-add__place 2. Приз
+                                        span.close-ico
+                                            svg.svg-ico.svg-ico_close
+                                                use(xlink:href="#close")
+                                .gifts-add__title Описание
+                                textarea(name="gift_description", rows="5", placeholder="Опишите розыгрыш")
+                                button.button Создать
         .box-content__body
             .gifts__item.open
                 .gifts__short
