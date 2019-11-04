@@ -11,6 +11,15 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @media screen and (max-width: 470px) {
+               flex-wrap: wrap;
+            }
+        }
+        .button-add {
+            @media screen and (max-width: 470px) {
+               margin-top: 20px;
+               margin-left: auto;
+            }
         }
     }
     .button-add-gift {
@@ -96,6 +105,7 @@
             box-sizing: border-box;
             border-radius: 22px;
             margin-bottom: 10px;
+            padding: 13px 20px;
         }
         
 
@@ -103,9 +113,18 @@
     &__tabs {
         display: flex;
         flex-direction: row-reverse;
+        @media screen and (max-width: 573px) {
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-top: 20px;
+        }
         .tabs__caption {
             display: flex;
             color: #B3B3B3;
+            border-radius: 20px;
+            @media screen and (max-width: 573px) {
+                width: 100%;
+            }
             li {
                 padding: 5px;
                 cursor: pointer;
@@ -174,7 +193,7 @@
                     width: 50%;
                     @media screen and (max-width: 1040px) {
                         width: 100%;
-                        padding: 0;
+                        padding: 15px;
                     }
                 }
             }
@@ -222,6 +241,11 @@
             line-height: 24px;
             font-weight: 600;
             margin-bottom: 20px;
+            @media screen and (max-width: 470px) {
+                font-size: 14px;
+                line-height: 1.2;
+                margin-bottom: 15px;
+            }
             &:after {
                 content: "";
                 position: absolute;
@@ -390,11 +414,7 @@
             width: 100%;
         }
     }
-    .box-content__head {
-        @media screen and (max-width: 470px) {
-            padding: 0;
-        }
-    }
+
     .button-add {
         position: relative;
         right: 0;
